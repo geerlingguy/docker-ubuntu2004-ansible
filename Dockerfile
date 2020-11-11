@@ -8,9 +8,10 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        apt-utils \
        locales \
+       libyaml-dev \
        python3-setuptools \
        python3-pip \
-       libyaml-dev \
+       python3-yaml \
        software-properties-common \
        rsyslog systemd systemd-cron sudo iproute2 \
     && rm -Rf /var/lib/apt/lists/* \
