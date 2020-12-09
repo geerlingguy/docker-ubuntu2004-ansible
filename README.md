@@ -1,6 +1,6 @@
 # Ubuntu 20.04 LTS (Focal Fossa) Ansible Test Image
 
-[![Build Status](https://travis-ci.com/geerlingguy/docker-ubuntu2004-ansible.svg?branch=master)](https://travis-ci.com/geerlingguy/docker-ubuntu2004-ansible) [![Docker Automated build](https://img.shields.io/docker/automated/geerlingguy/docker-ubuntu2004-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/geerlingguy/docker-ubuntu2004-ansible/)
+[![CI](https://github.com/geerlingguy/docker-ubuntu2004-ansible/workflows/Build/badge.svg?branch=master&event=push)](https://github.com/geerlingguy/docker-ubuntu2004-ansible/actions?query=workflow%3ABuild) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-ubuntu2004-ansible)](https://hub.docker.com/r/geerlingguy/docker-ubuntu2004-ansible/))
 
 Ubuntu 20.04 LTS (Focal Fossa) Docker container for Ansible playbook and role testing.
 
