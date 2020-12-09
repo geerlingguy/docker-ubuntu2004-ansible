@@ -1,14 +1,20 @@
 FROM ubuntu:20.04
 LABEL maintainer="Jeff Geerling"
 
+ENV DEBIAN_FRONTEND noninteractive
+
 ENV pip_packages "ansible"
 
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        apt-utils \
+       build-essential \
        locales \
+       libffi-dev \
+       libssl-dev \
        libyaml-dev \
+       python3-dev \
        python3-setuptools \
        python3-pip \
        python3-yaml \
