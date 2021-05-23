@@ -20,9 +20,9 @@ RUN apt-get update \
        python3-yaml \
        software-properties-common \
        rsyslog systemd systemd-cron sudo iproute2 \
+    && apt-get clean \
     && rm -Rf /var/lib/apt/lists/* \
-    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean
+    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 
 # Fix potential UTF-8 errors with ansible-test.
