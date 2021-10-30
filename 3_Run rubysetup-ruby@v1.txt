@@ -1,0 +1,19 @@
+2021-10-28T15:58:47.6405616Z ##[group]Run ruby/setup-ruby@v1
+2021-10-28T15:58:47.6406230Z with:
+2021-10-28T15:58:47.6406743Z   ruby-version: 2.4
+2021-10-28T15:58:47.6407317Z   bundler: default
+2021-10-28T15:58:47.6407882Z   bundler-cache: false
+2021-10-28T15:58:47.6408514Z   working-directory: .
+2021-10-28T15:58:47.6409110Z   cache-version: 0
+2021-10-28T15:58:47.6409655Z ##[endgroup]
+2021-10-28T15:58:48.4698330Z ##[group]Modifying PATH
+2021-10-28T15:58:48.4699113Z Entries added to PATH to use selected Ruby:
+2021-10-28T15:58:48.4699877Z   /opt/hostedtoolcache/Ruby/2.4.10/x64/bin
+2021-10-28T15:58:48.4701079Z ##[endgroup]
+2021-10-28T15:58:48.4702224Z ##[group]Installing Bundler
+2021-10-28T15:58:48.4703770Z [command]/opt/hostedtoolcache/Ruby/2.4.10/x64/bin/gem install bundler -v ~> 2
+2021-10-28T15:58:49.7551757Z Successfully installed bundler-2.2.30
+2021-10-28T15:58:49.7554120Z 1 gem installed
+2021-10-28T15:58:49.7585634Z Took   1.95 seconds
+2021-10-28T15:58:49.7596318Z ##[endgroup]
+2021-10-28T15:58:49.7606862Z 

@@ -1,0 +1,192 @@
+2021-10-28T15:58:46.8344145Z ##[group]Run actions/checkout@v2
+2021-10-28T15:58:46.8344925Z with:
+2021-10-28T15:58:46.8345524Z   repository: swipely/docker-api
+2021-10-28T15:58:46.8346674Z   token: ***
+2021-10-28T15:58:46.8347401Z   ssh-strict: true
+2021-10-28T15:58:46.8348065Z   persist-credentials: true
+2021-10-28T15:58:46.8348678Z   clean: true
+2021-10-28T15:58:46.8349216Z   fetch-depth: 1
+2021-10-28T15:58:46.8349857Z   lfs: false
+2021-10-28T15:58:46.8350334Z   submodules: false
+2021-10-28T15:58:46.8351027Z ##[endgroup]
+2021-10-28T15:58:47.1115981Z Syncing repository: swipely/docker-api
+2021-10-28T15:58:47.1117755Z ##[group]Getting Git version info
+2021-10-28T15:58:47.1122292Z Working directory is '/home/runner/work/docker-api/docker-api'
+2021-10-28T15:58:47.1123881Z [command]/usr/bin/git version
+2021-10-28T15:58:47.1269761Z git version 2.33.1
+2021-10-28T15:58:47.1294562Z ##[endgroup]
+2021-10-28T15:58:47.1300073Z Deleting the contents of '/home/runner/work/docker-api/docker-api'
+2021-10-28T15:58:47.1305950Z ##[group]Initializing the repository
+2021-10-28T15:58:47.1310174Z [command]/usr/bin/git init /home/runner/work/docker-api/docker-api
+2021-10-28T15:58:47.1408124Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-10-28T15:58:47.1409538Z hint: is subject to change. To configure the initial branch name to use in all
+2021-10-28T15:58:47.1410683Z hint: of your new repositories, which will suppress this warning, call:
+2021-10-28T15:58:47.1411546Z hint: 
+2021-10-28T15:58:47.1412598Z hint: 	git config --global init.defaultBranch <name>
+2021-10-28T15:58:47.1413442Z hint: 
+2021-10-28T15:58:47.1414471Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-10-28T15:58:47.1415806Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-10-28T15:58:47.1416708Z hint: 
+2021-10-28T15:58:47.1417549Z hint: 	git branch -m <name>
+2021-10-28T15:58:47.1426682Z Initialized empty Git repository in /home/runner/work/docker-api/docker-api/.git/
+2021-10-28T15:58:47.1439929Z [command]/usr/bin/git remote add origin https://github.com/swipely/docker-api
+2021-10-28T15:58:47.1501616Z ##[endgroup]
+2021-10-28T15:58:47.1503935Z ##[group]Disabling automatic garbage collection
+2021-10-28T15:58:47.1506162Z [command]/usr/bin/git config --local gc.auto 0
+2021-10-28T15:58:47.1568702Z ##[endgroup]
+2021-10-28T15:58:47.1575225Z ##[group]Setting up auth
+2021-10-28T15:58:47.1581172Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-10-28T15:58:47.1654826Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-10-28T15:58:47.2146703Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-10-28T15:58:47.5952814Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-10-28T15:58:47.6013769Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-10-28T15:58:47.6015798Z ##[endgroup]
+2021-10-28T15:58:47.6017166Z ##[group]Fetching the repository
+2021-10-28T15:58:47.6019112Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +ff75f15e0c7652512f861be3a4648914d2efd235:refs/remotes/pull/578/merge
+2021-10-28T15:58:47.6020677Z remote: Enumerating objects: 65, done.        
+2021-10-28T15:58:47.6021516Z remote: Counting objects:   1% (1/65)        
+2021-10-28T15:58:47.6022309Z remote: Counting objects:   3% (2/65)        
+2021-10-28T15:58:47.6023087Z remote: Counting objects:   4% (3/65)        
+2021-10-28T15:58:47.6023880Z remote: Counting objects:   6% (4/65)        
+2021-10-28T15:58:47.6024669Z remote: Counting objects:   7% (5/65)        
+2021-10-28T15:58:47.6025448Z remote: Counting objects:   9% (6/65)        
+2021-10-28T15:58:47.6026669Z remote: Counting objects:  10% (7/65)        
+2021-10-28T15:58:47.6028020Z remote: Counting objects:  12% (8/65)        
+2021-10-28T15:58:47.6028790Z remote: Counting objects:  13% (9/65)        
+2021-10-28T15:58:47.6029576Z remote: Counting objects:  15% (10/65)        
+2021-10-28T15:58:47.6030368Z remote: Counting objects:  16% (11/65)        
+2021-10-28T15:58:47.6031138Z remote: Counting objects:  18% (12/65)        
+2021-10-28T15:58:47.6031920Z remote: Counting objects:  20% (13/65)        
+2021-10-28T15:58:47.6032683Z remote: Counting objects:  21% (14/65)        
+2021-10-28T15:58:47.6033461Z remote: Counting objects:  23% (15/65)        
+2021-10-28T15:58:47.6034241Z remote: Counting objects:  24% (16/65)        
+2021-10-28T15:58:47.6035008Z remote: Counting objects:  26% (17/65)        
+2021-10-28T15:58:47.6035784Z remote: Counting objects:  27% (18/65)        
+2021-10-28T15:58:47.6037302Z remote: Counting objects:  29% (19/65)        
+2021-10-28T15:58:47.6041903Z remote: Counting objects:  30% (20/65)        
+2021-10-28T15:58:47.6042833Z remote: Counting objects:  32% (21/65)        
+2021-10-28T15:58:47.6043713Z remote: Counting objects:  33% (22/65)        
+2021-10-28T15:58:47.6044481Z remote: Counting objects:  35% (23/65)        
+2021-10-28T15:58:47.6045269Z remote: Counting objects:  36% (24/65)        
+2021-10-28T15:58:47.6046051Z remote: Counting objects:  38% (25/65)        
+2021-10-28T15:58:47.6046815Z remote: Counting objects:  40% (26/65)        
+2021-10-28T15:58:47.6047599Z remote: Counting objects:  41% (27/65)        
+2021-10-28T15:58:47.6048371Z remote: Counting objects:  43% (28/65)        
+2021-10-28T15:58:47.6049152Z remote: Counting objects:  44% (29/65)        
+2021-10-28T15:58:47.6049933Z remote: Counting objects:  46% (30/65)        
+2021-10-28T15:58:47.6050701Z remote: Counting objects:  47% (31/65)        
+2021-10-28T15:58:47.6051483Z remote: Counting objects:  49% (32/65)        
+2021-10-28T15:58:47.6052262Z remote: Counting objects:  50% (33/65)        
+2021-10-28T15:58:47.6053330Z remote: Counting objects:  52% (34/65)        
+2021-10-28T15:58:47.6054116Z remote: Counting objects:  53% (35/65)        
+2021-10-28T15:58:47.6054903Z remote: Counting objects:  55% (36/65)        
+2021-10-28T15:58:47.6055665Z remote: Counting objects:  56% (37/65)        
+2021-10-28T15:58:47.6056447Z remote: Counting objects:  58% (38/65)        
+2021-10-28T15:58:47.6057234Z remote: Counting objects:  60% (39/65)        
+2021-10-28T15:58:47.6058001Z remote: Counting objects:  61% (40/65)        
+2021-10-28T15:58:47.6058780Z remote: Counting objects:  63% (41/65)        
+2021-10-28T15:58:47.6059551Z remote: Counting objects:  64% (42/65)        
+2021-10-28T15:58:47.6060326Z remote: Counting objects:  66% (43/65)        
+2021-10-28T15:58:47.6061107Z remote: Counting objects:  67% (44/65)        
+2021-10-28T15:58:47.6061874Z remote: Counting objects:  69% (45/65)        
+2021-10-28T15:58:47.6062648Z remote: Counting objects:  70% (46/65)        
+2021-10-28T15:58:47.6063421Z remote: Counting objects:  72% (47/65)        
+2021-10-28T15:58:47.6064298Z remote: Counting objects:  73% (48/65)        
+2021-10-28T15:58:47.6065085Z remote: Counting objects:  75% (49/65)        
+2021-10-28T15:58:47.6065866Z remote: Counting objects:  76% (50/65)        
+2021-10-28T15:58:47.6066628Z remote: Counting objects:  78% (51/65)        
+2021-10-28T15:58:47.6067616Z remote: Counting objects:  80% (52/65)        
+2021-10-28T15:58:47.6068395Z remote: Counting objects:  81% (53/65)        
+2021-10-28T15:58:47.6069174Z remote: Counting objects:  83% (54/65)        
+2021-10-28T15:58:47.6069956Z remote: Counting objects:  84% (55/65)        
+2021-10-28T15:58:47.6070720Z remote: Counting objects:  86% (56/65)        
+2021-10-28T15:58:47.6071501Z remote: Counting objects:  87% (57/65)        
+2021-10-28T15:58:47.6072278Z remote: Counting objects:  89% (58/65)        
+2021-10-28T15:58:47.6073044Z remote: Counting objects:  90% (59/65)        
+2021-10-28T15:58:47.6074103Z remote: Counting objects:  92% (60/65)        
+2021-10-28T15:58:47.6075113Z remote: Counting objects:  93% (61/65)        
+2021-10-28T15:58:47.6075890Z remote: Counting objects:  95% (62/65)        
+2021-10-28T15:58:47.6076650Z remote: Counting objects:  96% (63/65)        
+2021-10-28T15:58:47.6077426Z remote: Counting objects:  98% (64/65)        
+2021-10-28T15:58:47.6078194Z remote: Counting objects: 100% (65/65)        
+2021-10-28T15:58:47.6096010Z remote: Counting objects: 100% (65/65), done.        
+2021-10-28T15:58:47.6102750Z remote: Compressing objects:   2% (1/50)        
+2021-10-28T15:58:47.6103653Z remote: Compressing objects:   4% (2/50)        
+2021-10-28T15:58:47.6104478Z remote: Compressing objects:   6% (3/50)        
+2021-10-28T15:58:47.6105323Z remote: Compressing objects:   8% (4/50)        
+2021-10-28T15:58:47.6106163Z remote: Compressing objects:  10% (5/50)        
+2021-10-28T15:58:47.6107842Z remote: Compressing objects:  12% (6/50)        
+2021-10-28T15:58:47.6108733Z remote: Compressing objects:  14% (7/50)        
+2021-10-28T15:58:47.6109592Z remote: Compressing objects:  16% (8/50)        
+2021-10-28T15:58:47.6110420Z remote: Compressing objects:  18% (9/50)        
+2021-10-28T15:58:47.6111253Z remote: Compressing objects:  20% (10/50)        
+2021-10-28T15:58:47.6112071Z remote: Compressing objects:  22% (11/50)        
+2021-10-28T15:58:47.6112897Z remote: Compressing objects:  24% (12/50)        
+2021-10-28T15:58:47.6113796Z remote: Compressing objects:  26% (13/50)        
+2021-10-28T15:58:47.6114608Z remote: Compressing objects:  28% (14/50)        
+2021-10-28T15:58:47.6115443Z remote: Compressing objects:  30% (15/50)        
+2021-10-28T15:58:47.6116266Z remote: Compressing objects:  32% (16/50)        
+2021-10-28T15:58:47.6117070Z remote: Compressing objects:  34% (17/50)        
+2021-10-28T15:58:47.6117901Z remote: Compressing objects:  36% (18/50)        
+2021-10-28T15:58:47.6118726Z remote: Compressing objects:  38% (19/50)        
+2021-10-28T15:58:47.6119536Z remote: Compressing objects:  40% (20/50)        
+2021-10-28T15:58:47.6120581Z remote: Compressing objects:  42% (21/50)        
+2021-10-28T15:58:47.6121417Z remote: Compressing objects:  44% (22/50)        
+2021-10-28T15:58:47.6122229Z remote: Compressing objects:  46% (23/50)        
+2021-10-28T15:58:47.6123055Z remote: Compressing objects:  48% (24/50)        
+2021-10-28T15:58:47.6123867Z remote: Compressing objects:  50% (25/50)        
+2021-10-28T15:58:47.6124689Z remote: Compressing objects:  52% (26/50)        
+2021-10-28T15:58:47.6125513Z remote: Compressing objects:  54% (27/50)        
+2021-10-28T15:58:47.6126324Z remote: Compressing objects:  56% (28/50)        
+2021-10-28T15:58:47.6127160Z remote: Compressing objects:  58% (29/50)        
+2021-10-28T15:58:47.6127980Z remote: Compressing objects:  60% (30/50)        
+2021-10-28T15:58:47.6128783Z remote: Compressing objects:  62% (31/50)        
+2021-10-28T15:58:47.6129608Z remote: Compressing objects:  64% (32/50)        
+2021-10-28T15:58:47.6130440Z remote: Compressing objects:  66% (33/50)        
+2021-10-28T15:58:47.6131267Z remote: Compressing objects:  68% (34/50)        
+2021-10-28T15:58:47.6132091Z remote: Compressing objects:  70% (35/50)        
+2021-10-28T15:58:47.6132919Z remote: Compressing objects:  72% (36/50)        
+2021-10-28T15:58:47.6133727Z remote: Compressing objects:  74% (37/50)        
+2021-10-28T15:58:47.6134549Z remote: Compressing objects:  76% (38/50)        
+2021-10-28T15:58:47.6135354Z remote: Compressing objects:  78% (39/50)        
+2021-10-28T15:58:47.6136177Z remote: Compressing objects:  80% (40/50)        
+2021-10-28T15:58:47.6136998Z remote: Compressing objects:  82% (41/50)        
+2021-10-28T15:58:47.6137801Z remote: Compressing objects:  84% (42/50)        
+2021-10-28T15:58:47.6138628Z remote: Compressing objects:  86% (43/50)        
+2021-10-28T15:58:47.6140115Z remote: Compressing objects:  88% (44/50)        
+2021-10-28T15:58:47.6141077Z remote: Compressing objects:  90% (45/50)        
+2021-10-28T15:58:47.6141925Z remote: Compressing objects:  92% (46/50)        
+2021-10-28T15:58:47.6142993Z remote: Compressing objects:  94% (47/50)        
+2021-10-28T15:58:47.6143816Z remote: Compressing objects:  96% (48/50)        
+2021-10-28T15:58:47.6144643Z remote: Compressing objects:  98% (49/50)        
+2021-10-28T15:58:47.6145473Z remote: Compressing objects: 100% (50/50)        
+2021-10-28T15:58:47.6146317Z remote: Compressing objects: 100% (50/50), done.        
+2021-10-28T15:58:47.6150573Z remote: Total 65 (delta 3), reused 23 (delta 2), pack-reused 0        
+2021-10-28T15:58:47.6152566Z From https://github.com/swipely/docker-api
+2021-10-28T15:58:47.6235269Z  * [new ref]         ff75f15e0c7652512f861be3a4648914d2efd235 -> pull/578/merge
+2021-10-28T15:58:47.6237130Z ##[endgroup]
+2021-10-28T15:58:47.6238660Z ##[group]Determining the checkout info
+2021-10-28T15:58:47.6242500Z ##[endgroup]
+2021-10-28T15:58:47.6244143Z ##[group]Checking out the ref
+2021-10-28T15:58:47.6246148Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/578/merge
+2021-10-28T15:58:47.6247217Z Note: switching to 'refs/remotes/pull/578/merge'.
+2021-10-28T15:58:47.6247894Z 
+2021-10-28T15:58:47.6248969Z You are in 'detached HEAD' state. You can look around, make experimental
+2021-10-28T15:58:47.6250066Z changes and commit them, and you can discard any commits you make in this
+2021-10-28T15:58:47.6251093Z state without impacting any branches by switching back to a branch.
+2021-10-28T15:58:47.6251739Z 
+2021-10-28T15:58:47.6252549Z If you want to create a new branch to retain commits you create, you may
+2021-10-28T15:58:47.6253751Z do so (now or later) by using -c with the switch command. Example:
+2021-10-28T15:58:47.6254383Z 
+2021-10-28T15:58:47.6255261Z   git switch -c <new-branch-name>
+2021-10-28T15:58:47.6255822Z 
+2021-10-28T15:58:47.6256466Z Or undo this operation with:
+2021-10-28T15:58:47.6256972Z 
+2021-10-28T15:58:47.6257722Z   git switch -
+2021-10-28T15:58:47.6258194Z 
+2021-10-28T15:58:47.6259072Z Turn off this advice by setting config variable advice.detachedHead to false
+2021-10-28T15:58:47.6259807Z 
+2021-10-28T15:58:47.6261317Z HEAD is now at ff75f15 Merge 58ffeb30b415a3e7836f3b3e34cc8d22d9fdb7c3 into e32fb6fb339d255f259f60d810664f7fd7a2e286
+2021-10-28T15:58:47.6263224Z ##[endgroup]
+2021-10-28T15:58:47.6264205Z [command]/usr/bin/git log -1 --format='%H'
+2021-10-28T15:58:47.6265326Z 'ff75f15e0c7652512f861be3a4648914d2efd235'

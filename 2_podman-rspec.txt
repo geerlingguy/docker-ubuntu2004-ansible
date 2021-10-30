@@ -1,0 +1,23 @@
+2021-10-28T15:58:31.9439780Z ##[section]Starting: Prepare job podman-rspec
+2021-10-28T15:58:31.9441477Z Evaluating strategy
+2021-10-28T15:58:31.9442266Z Creating job '_2_7'
+2021-10-28T15:58:31.9442551Z Evaluating timeout
+2021-10-28T15:58:31.9442589Z Evaluating cancel timeout
+2021-10-28T15:58:31.9442625Z Evaluating continue on error
+2021-10-28T15:58:31.9442662Z Evaluating target
+2021-10-28T15:58:31.9443059Z Creating job '_2_6'
+2021-10-28T15:58:31.9443232Z Evaluating timeout
+2021-10-28T15:58:31.9443285Z Evaluating cancel timeout
+2021-10-28T15:58:31.9443317Z Evaluating continue on error
+2021-10-28T15:58:31.9443353Z Evaluating target
+2021-10-28T15:58:31.9443667Z Creating job '_2_5'
+2021-10-28T15:58:31.9443815Z Evaluating timeout
+2021-10-28T15:58:31.9443842Z Evaluating cancel timeout
+2021-10-28T15:58:31.9443873Z Evaluating continue on error
+2021-10-28T15:58:31.9443908Z Evaluating target
+2021-10-28T15:58:31.9444203Z Creating job '_2_4'
+2021-10-28T15:58:31.9444364Z Evaluating timeout
+2021-10-28T15:58:31.9444390Z Evaluating cancel timeout
+2021-10-28T15:58:31.9444421Z Evaluating continue on error
+2021-10-28T15:58:31.9444462Z Evaluating target
+2021-10-28T15:58:31.9447506Z ##[section]Finishing: Prepare job podman-rspec

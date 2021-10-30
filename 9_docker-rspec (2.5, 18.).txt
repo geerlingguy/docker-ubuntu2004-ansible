@@ -1,0 +1,1229 @@
+2021-10-28T15:58:32.5681491Z Found online and idle hosted runner in the current repository's enterprise account that matches the required labels: 'ubuntu-18.04'
+2021-10-28T15:58:32.6543230Z Waiting for a Hosted runner in the 'enterprise' to pick this job...
+2021-10-28T15:58:33.6156561Z Job is waiting for a hosted runner to come online.
+2021-10-28T15:58:37.5672421Z Job is about to start running on the hosted runner: GitHub Actions 6 (hosted)
+2021-10-28T15:58:42.1650758Z Current runner version: '2.283.3'
+2021-10-28T15:58:42.1678906Z ##[group]Operating System
+2021-10-28T15:58:42.1679869Z Ubuntu
+2021-10-28T15:58:42.1680340Z 18.04.6
+2021-10-28T15:58:42.1680800Z LTS
+2021-10-28T15:58:42.1681249Z ##[endgroup]
+2021-10-28T15:58:42.1681841Z ##[group]Virtual Environment
+2021-10-28T15:58:42.1682471Z Environment: ubuntu-18.04
+2021-10-28T15:58:42.1683033Z Version: 20211017.0
+2021-10-28T15:58:42.1683983Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20211017.0/images/linux/Ubuntu1804-README.md
+2021-10-28T15:58:42.1685380Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu18%2F20211017.0
+2021-10-28T15:58:42.1686277Z ##[endgroup]
+2021-10-28T15:58:42.1686872Z ##[group]Virtual Environment Provisioner
+2021-10-28T15:58:42.1687523Z 1.0.0.0-master-20211022-1
+2021-10-28T15:58:42.1688028Z ##[endgroup]
+2021-10-28T15:58:42.1690017Z ##[group]GITHUB_TOKEN Permissions
+2021-10-28T15:58:42.1691485Z Actions: write
+2021-10-28T15:58:42.1692084Z Checks: write
+2021-10-28T15:58:42.1692561Z Contents: write
+2021-10-28T15:58:42.1693130Z Deployments: write
+2021-10-28T15:58:42.1693651Z Discussions: write
+2021-10-28T15:58:42.1694232Z Issues: write
+2021-10-28T15:58:42.1694695Z Metadata: read
+2021-10-28T15:58:42.1695219Z Packages: write
+2021-10-28T15:58:42.1695715Z Pages: write
+2021-10-28T15:58:42.1696262Z PullRequests: write
+2021-10-28T15:58:42.1696923Z RepositoryProjects: write
+2021-10-28T15:58:42.1697518Z SecurityEvents: write
+2021-10-28T15:58:42.1698102Z Statuses: write
+2021-10-28T15:58:42.1698668Z ##[endgroup]
+2021-10-28T15:58:42.1701999Z Prepare workflow directory
+2021-10-28T15:58:42.2297078Z Prepare all required actions
+2021-10-28T15:58:42.2307405Z Getting action download info
+2021-10-28T15:58:42.4801195Z Download action repository 'actions/checkout@v2' (SHA:1e204e9a9253d643386038d443f96446fa156a97)
+2021-10-28T15:58:44.6937180Z Download action repository 'ruby/setup-ruby@v1' (SHA:b00551441a6fa3d528f3443dbff264a934b6e316)
+2021-10-28T15:58:45.3934919Z ##[group]Run actions/checkout@v2
+2021-10-28T15:58:45.3935571Z with:
+2021-10-28T15:58:45.3936075Z   repository: swipely/docker-api
+2021-10-28T15:58:45.3937082Z   token: ***
+2021-10-28T15:58:45.3937515Z   ssh-strict: true
+2021-10-28T15:58:45.3938060Z   persist-credentials: true
+2021-10-28T15:58:45.3938603Z   clean: true
+2021-10-28T15:58:45.3939046Z   fetch-depth: 1
+2021-10-28T15:58:45.3939484Z   lfs: false
+2021-10-28T15:58:45.3939912Z   submodules: false
+2021-10-28T15:58:45.3940419Z ##[endgroup]
+2021-10-28T15:58:45.6178881Z Syncing repository: swipely/docker-api
+2021-10-28T15:58:45.6181008Z ##[group]Getting Git version info
+2021-10-28T15:58:45.6182002Z Working directory is '/home/runner/work/docker-api/docker-api'
+2021-10-28T15:58:45.6253376Z [command]/usr/bin/git version
+2021-10-28T15:58:45.6412374Z git version 2.33.1
+2021-10-28T15:58:46.1946187Z ##[endgroup]
+2021-10-28T15:58:46.1947077Z Deleting the contents of '/home/runner/work/docker-api/docker-api'
+2021-10-28T15:58:46.1949342Z ##[group]Initializing the repository
+2021-10-28T15:58:46.1950454Z [command]/usr/bin/git init /home/runner/work/docker-api/docker-api
+2021-10-28T15:58:46.1951423Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-10-28T15:58:46.1952248Z hint: is subject to change. To configure the initial branch name to use in all
+2021-10-28T15:58:46.1953069Z hint: of your new repositories, which will suppress this warning, call:
+2021-10-28T15:58:46.1953794Z hint: 
+2021-10-28T15:58:46.1954519Z hint: 	git config --global init.defaultBranch <name>
+2021-10-28T15:58:46.1955087Z hint: 
+2021-10-28T15:58:46.1955814Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-10-28T15:58:46.1956793Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-10-28T15:58:46.1957410Z hint: 
+2021-10-28T15:58:46.1957976Z hint: 	git branch -m <name>
+2021-10-28T15:58:46.1958848Z Initialized empty Git repository in /home/runner/work/docker-api/docker-api/.git/
+2021-10-28T15:58:46.1959967Z [command]/usr/bin/git remote add origin https://github.com/swipely/docker-api
+2021-10-28T15:58:46.1961583Z ##[endgroup]
+2021-10-28T15:58:46.1962639Z ##[group]Disabling automatic garbage collection
+2021-10-28T15:58:46.1963444Z [command]/usr/bin/git config --local gc.auto 0
+2021-10-28T15:58:46.1964461Z ##[endgroup]
+2021-10-28T15:58:46.1966940Z ##[group]Setting up auth
+2021-10-28T15:58:46.1967821Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-10-28T15:58:46.1969360Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-10-28T15:58:46.1970916Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-10-28T15:58:46.1972662Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-10-28T15:58:46.1974386Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-10-28T15:58:46.1975679Z ##[endgroup]
+2021-10-28T15:58:46.1976666Z ##[group]Fetching the repository
+2021-10-28T15:58:46.1978209Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +ff75f15e0c7652512f861be3a4648914d2efd235:refs/remotes/pull/578/merge
+2021-10-28T15:58:46.1979411Z remote: Enumerating objects: 65, done.        
+2021-10-28T15:58:46.1980009Z remote: Counting objects:   1% (1/65)        
+2021-10-28T15:58:46.1980564Z remote: Counting objects:   3% (2/65)        
+2021-10-28T15:58:46.1981127Z remote: Counting objects:   4% (3/65)        
+2021-10-28T15:58:46.1981686Z remote: Counting objects:   6% (4/65)        
+2021-10-28T15:58:46.1982230Z remote: Counting objects:   7% (5/65)        
+2021-10-28T15:58:46.1983180Z remote: Counting objects:   9% (6/65)        
+2021-10-28T15:58:46.1983757Z remote: Counting objects:  10% (7/65)        
+2021-10-28T15:58:46.1984314Z remote: Counting objects:  12% (8/65)        
+2021-10-28T15:58:46.1984877Z remote: Counting objects:  13% (9/65)        
+2021-10-28T15:58:46.1985424Z remote: Counting objects:  15% (10/65)        
+2021-10-28T15:58:46.1985990Z remote: Counting objects:  16% (11/65)        
+2021-10-28T15:58:46.1986537Z remote: Counting objects:  18% (12/65)        
+2021-10-28T15:58:46.1987092Z remote: Counting objects:  20% (13/65)        
+2021-10-28T15:58:46.1987634Z remote: Counting objects:  21% (14/65)        
+2021-10-28T15:58:46.1988191Z remote: Counting objects:  23% (15/65)        
+2021-10-28T15:58:46.1988744Z remote: Counting objects:  24% (16/65)        
+2021-10-28T15:58:46.1989291Z remote: Counting objects:  26% (17/65)        
+2021-10-28T15:58:46.1989851Z remote: Counting objects:  27% (18/65)        
+2021-10-28T15:58:46.1990396Z remote: Counting objects:  29% (19/65)        
+2021-10-28T15:58:46.1990958Z remote: Counting objects:  30% (20/65)        
+2021-10-28T15:58:46.1991520Z remote: Counting objects:  32% (21/65)        
+2021-10-28T15:58:46.1992065Z remote: Counting objects:  33% (22/65)        
+2021-10-28T15:58:46.1992625Z remote: Counting objects:  35% (23/65)        
+2021-10-28T15:58:46.1993169Z remote: Counting objects:  36% (24/65)        
+2021-10-28T15:58:46.1993725Z remote: Counting objects:  38% (25/65)        
+2021-10-28T15:58:46.1994264Z remote: Counting objects:  40% (26/65)        
+2021-10-28T15:58:46.1994825Z remote: Counting objects:  41% (27/65)        
+2021-10-28T15:58:46.1995384Z remote: Counting objects:  43% (28/65)        
+2021-10-28T15:58:46.1995926Z remote: Counting objects:  44% (29/65)        
+2021-10-28T15:58:46.1996484Z remote: Counting objects:  46% (30/65)        
+2021-10-28T15:58:46.1997031Z remote: Counting objects:  47% (31/65)        
+2021-10-28T15:58:46.1997589Z remote: Counting objects:  49% (32/65)        
+2021-10-28T15:58:46.1998155Z remote: Counting objects:  50% (33/65)        
+2021-10-28T15:58:46.1998811Z remote: Counting objects:  52% (34/65)        
+2021-10-28T15:58:46.1999369Z remote: Counting objects:  53% (35/65)        
+2021-10-28T15:58:46.2002442Z remote: Counting objects:  55% (36/65)        
+2021-10-28T15:58:46.2003017Z remote: Counting objects:  56% (37/65)        
+2021-10-28T15:58:46.2003581Z remote: Counting objects:  58% (38/65)        
+2021-10-28T15:58:46.2004133Z remote: Counting objects:  60% (39/65)        
+2021-10-28T15:58:46.2004691Z remote: Counting objects:  61% (40/65)        
+2021-10-28T15:58:46.2005250Z remote: Counting objects:  63% (41/65)        
+2021-10-28T15:58:46.2005797Z remote: Counting objects:  64% (42/65)        
+2021-10-28T15:58:46.2006357Z remote: Counting objects:  66% (43/65)        
+2021-10-28T15:58:46.2006903Z remote: Counting objects:  67% (44/65)        
+2021-10-28T15:58:46.2007460Z remote: Counting objects:  69% (45/65)        
+2021-10-28T15:58:46.2008002Z remote: Counting objects:  70% (46/65)        
+2021-10-28T15:58:46.2008578Z remote: Counting objects:  72% (47/65)        
+2021-10-28T15:58:46.2009147Z remote: Counting objects:  73% (48/65)        
+2021-10-28T15:58:46.2009688Z remote: Counting objects:  75% (49/65)        
+2021-10-28T15:58:46.2010244Z remote: Counting objects:  76% (50/65)        
+2021-10-28T15:58:46.2010789Z remote: Counting objects:  78% (51/65)        
+2021-10-28T15:58:46.2011348Z remote: Counting objects:  80% (52/65)        
+2021-10-28T15:58:46.2011908Z remote: Counting objects:  81% (53/65)        
+2021-10-28T15:58:46.2012452Z remote: Counting objects:  83% (54/65)        
+2021-10-28T15:58:46.2013011Z remote: Counting objects:  84% (55/65)        
+2021-10-28T15:58:46.2013552Z remote: Counting objects:  86% (56/65)        
+2021-10-28T15:58:46.2014102Z remote: Counting objects:  87% (57/65)        
+2021-10-28T15:58:46.2014649Z remote: Counting objects:  89% (58/65)        
+2021-10-28T15:58:46.2015210Z remote: Counting objects:  90% (59/65)        
+2021-10-28T15:58:46.2015929Z remote: Counting objects:  92% (60/65)        
+2021-10-28T15:58:46.2016489Z remote: Counting objects:  93% (61/65)        
+2021-10-28T15:58:46.2017046Z remote: Counting objects:  95% (62/65)        
+2021-10-28T15:58:46.2017590Z remote: Counting objects:  96% (63/65)        
+2021-10-28T15:58:46.2018144Z remote: Counting objects:  98% (64/65)        
+2021-10-28T15:58:46.2018705Z remote: Counting objects: 100% (65/65)        
+2021-10-28T15:58:46.2019271Z remote: Counting objects: 100% (65/65), done.        
+2021-10-28T15:58:46.2019873Z remote: Compressing objects:   2% (1/50)        
+2021-10-28T15:58:46.2020465Z remote: Compressing objects:   4% (2/50)        
+2021-10-28T15:58:46.2021064Z remote: Compressing objects:   6% (3/50)        
+2021-10-28T15:58:46.2021646Z remote: Compressing objects:   8% (4/50)        
+2021-10-28T15:58:46.2022243Z remote: Compressing objects:  10% (5/50)        
+2021-10-28T15:58:46.2023026Z remote: Compressing objects:  12% (6/50)        
+2021-10-28T15:58:46.2023625Z remote: Compressing objects:  14% (7/50)        
+2021-10-28T15:58:46.2024227Z remote: Compressing objects:  16% (8/50)        
+2021-10-28T15:58:46.2024811Z remote: Compressing objects:  18% (9/50)        
+2021-10-28T15:58:46.2026031Z remote: Compressing objects:  20% (10/50)        
+2021-10-28T15:58:46.2026644Z remote: Compressing objects:  22% (11/50)        
+2021-10-28T15:58:46.2027238Z remote: Compressing objects:  24% (12/50)        
+2021-10-28T15:58:46.2027847Z remote: Compressing objects:  26% (13/50)        
+2021-10-28T15:58:46.2028433Z remote: Compressing objects:  28% (14/50)        
+2021-10-28T15:58:46.2029032Z remote: Compressing objects:  30% (15/50)        
+2021-10-28T15:58:46.2029618Z remote: Compressing objects:  32% (16/50)        
+2021-10-28T15:58:46.2030227Z remote: Compressing objects:  34% (17/50)        
+2021-10-28T15:58:46.2030825Z remote: Compressing objects:  36% (18/50)        
+2021-10-28T15:58:46.2031410Z remote: Compressing objects:  38% (19/50)        
+2021-10-28T15:58:46.2032022Z remote: Compressing objects:  40% (20/50)        
+2021-10-28T15:58:46.2032751Z remote: Compressing objects:  42% (21/50)        
+2021-10-28T15:58:46.2033357Z remote: Compressing objects:  44% (22/50)        
+2021-10-28T15:58:46.2033953Z remote: Compressing objects:  46% (23/50)        
+2021-10-28T15:58:46.2034541Z remote: Compressing objects:  48% (24/50)        
+2021-10-28T15:58:46.2035162Z remote: Compressing objects:  50% (25/50)        
+2021-10-28T15:58:46.2035748Z remote: Compressing objects:  52% (26/50)        
+2021-10-28T15:58:46.2036354Z remote: Compressing objects:  54% (27/50)        
+2021-10-28T15:58:46.2036940Z remote: Compressing objects:  56% (28/50)        
+2021-10-28T15:58:46.2037535Z remote: Compressing objects:  58% (29/50)        
+2021-10-28T15:58:46.2038131Z remote: Compressing objects:  60% (30/50)        
+2021-10-28T15:58:46.2038713Z remote: Compressing objects:  62% (31/50)        
+2021-10-28T15:58:46.2039315Z remote: Compressing objects:  64% (32/50)        
+2021-10-28T15:58:46.2039899Z remote: Compressing objects:  66% (33/50)        
+2021-10-28T15:58:46.2040499Z remote: Compressing objects:  68% (34/50)        
+2021-10-28T15:58:46.2041097Z remote: Compressing objects:  70% (35/50)        
+2021-10-28T15:58:46.2041677Z remote: Compressing objects:  72% (36/50)        
+2021-10-28T15:58:46.2042274Z remote: Compressing objects:  74% (37/50)        
+2021-10-28T15:58:46.2042855Z remote: Compressing objects:  76% (38/50)        
+2021-10-28T15:58:46.2043455Z remote: Compressing objects:  78% (39/50)        
+2021-10-28T15:58:46.2044050Z remote: Compressing objects:  80% (40/50)        
+2021-10-28T15:58:46.2044633Z remote: Compressing objects:  82% (41/50)        
+2021-10-28T15:58:46.2045232Z remote: Compressing objects:  84% (42/50)        
+2021-10-28T15:58:46.2045816Z remote: Compressing objects:  86% (43/50)        
+2021-10-28T15:58:46.2046409Z remote: Compressing objects:  88% (44/50)        
+2021-10-28T15:58:46.2046992Z remote: Compressing objects:  90% (45/50)        
+2021-10-28T15:58:46.2047665Z remote: Compressing objects:  92% (46/50)        
+2021-10-28T15:58:46.2048277Z remote: Compressing objects:  94% (47/50)        
+2021-10-28T15:58:46.2048860Z remote: Compressing objects:  96% (48/50)        
+2021-10-28T15:58:46.2049453Z remote: Compressing objects:  98% (49/50)        
+2021-10-28T15:58:46.2050037Z remote: Compressing objects: 100% (50/50)        
+2021-10-28T15:58:46.2050652Z remote: Compressing objects: 100% (50/50), done.        
+2021-10-28T15:58:46.2115042Z remote: Total 65 (delta 3), reused 23 (delta 2), pack-reused 0        
+2021-10-28T15:58:46.2122279Z From https://github.com/swipely/docker-api
+2021-10-28T15:58:46.2123539Z  * [new ref]         ff75f15e0c7652512f861be3a4648914d2efd235 -> pull/578/merge
+2021-10-28T15:58:46.2175361Z ##[endgroup]
+2021-10-28T15:58:46.2176431Z ##[group]Determining the checkout info
+2021-10-28T15:58:46.2177429Z ##[endgroup]
+2021-10-28T15:58:46.2178380Z ##[group]Checking out the ref
+2021-10-28T15:58:46.2179552Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/578/merge
+2021-10-28T15:58:46.2271527Z Note: switching to 'refs/remotes/pull/578/merge'.
+2021-10-28T15:58:46.2271976Z 
+2021-10-28T15:58:46.2272772Z You are in 'detached HEAD' state. You can look around, make experimental
+2021-10-28T15:58:46.2273584Z changes and commit them, and you can discard any commits you make in this
+2021-10-28T15:58:46.2274347Z state without impacting any branches by switching back to a branch.
+2021-10-28T15:58:46.2274793Z 
+2021-10-28T15:58:46.2275358Z If you want to create a new branch to retain commits you create, you may
+2021-10-28T15:58:46.2276248Z do so (now or later) by using -c with the switch command. Example:
+2021-10-28T15:58:46.2276668Z 
+2021-10-28T15:58:46.2277274Z   git switch -c <new-branch-name>
+2021-10-28T15:58:46.2277621Z 
+2021-10-28T15:58:46.2278064Z Or undo this operation with:
+2021-10-28T15:58:46.2278394Z 
+2021-10-28T15:58:46.2278892Z   git switch -
+2021-10-28T15:58:46.2279172Z 
+2021-10-28T15:58:46.2279822Z Turn off this advice by setting config variable advice.detachedHead to false
+2021-10-28T15:58:46.2280348Z 
+2021-10-28T15:58:46.2281430Z HEAD is now at ff75f15 Merge 58ffeb30b415a3e7836f3b3e34cc8d22d9fdb7c3 into e32fb6fb339d255f259f60d810664f7fd7a2e286
+2021-10-28T15:58:46.2283013Z ##[endgroup]
+2021-10-28T15:58:46.2315279Z [command]/usr/bin/git log -1 --format='%H'
+2021-10-28T15:58:46.2367827Z 'ff75f15e0c7652512f861be3a4648914d2efd235'
+2021-10-28T15:58:46.2574373Z ##[group]Run ruby/setup-ruby@v1
+2021-10-28T15:58:46.2574890Z with:
+2021-10-28T15:58:46.2575313Z   ruby-version: 2.5
+2021-10-28T15:58:46.2575781Z   bundler: default
+2021-10-28T15:58:46.2576277Z   bundler-cache: false
+2021-10-28T15:58:46.2576798Z   working-directory: .
+2021-10-28T15:58:46.2577317Z   cache-version: 0
+2021-10-28T15:58:46.2577771Z ##[endgroup]
+2021-10-28T15:58:46.4034766Z ##[group]Modifying PATH
+2021-10-28T15:58:46.4035447Z Entries added to PATH to use selected Ruby:
+2021-10-28T15:58:46.4036091Z   /opt/hostedtoolcache/Ruby/2.5.9/x64/bin
+2021-10-28T15:58:46.4037156Z ##[endgroup]
+2021-10-28T15:58:46.4044896Z ##[group]Installing Bundler
+2021-10-28T15:58:46.4070577Z [command]/opt/hostedtoolcache/Ruby/2.5.9/x64/bin/gem install bundler -v ~> 2
+2021-10-28T15:58:51.0390667Z Successfully installed bundler-2.2.30
+2021-10-28T15:58:51.0403256Z 1 gem installed
+2021-10-28T15:58:51.0420033Z Took   4.64 seconds
+2021-10-28T15:58:51.0442130Z ##[endgroup]
+2021-10-28T15:58:51.0475287Z 
+2021-10-28T15:58:51.0563517Z ##[group]Run gem install bundler -v '~> 1.17.3'
+2021-10-28T15:58:51.0564170Z [36;1mgem install bundler -v '~> 1.17.3'[0m
+2021-10-28T15:58:51.0564625Z [36;1mbundle update[0m
+2021-10-28T15:58:51.0609442Z shell: /bin/bash -e {0}
+2021-10-28T15:58:51.0609851Z ##[endgroup]
+2021-10-28T15:58:51.5592787Z Successfully installed bundler-1.17.3
+2021-10-28T15:58:51.5593547Z 1 gem installed
+2021-10-28T15:58:56.8927139Z Fetching gem metadata from http://rubygems.org/...........
+2021-10-28T15:58:57.0262180Z Resolving dependencies...
+2021-10-28T15:58:57.0372633Z Fetching rake 13.0.6
+2021-10-28T15:58:57.0888603Z Installing rake 13.0.6
+2021-10-28T15:58:57.1800248Z Using bundler 2.2.30
+2021-10-28T15:58:57.1804267Z Fetching public_suffix 4.0.6
+2021-10-28T15:58:57.1817703Z Fetching parallel 1.21.0
+2021-10-28T15:58:57.2034604Z Installing parallel 1.21.0
+2021-10-28T15:58:57.2107005Z Fetching coderay 1.1.3
+2021-10-28T15:58:57.2229712Z Installing public_suffix 4.0.6
+2021-10-28T15:58:57.2462491Z Installing coderay 1.1.3
+2021-10-28T15:58:57.2886756Z Fetching rexml 3.2.5
+2021-10-28T15:58:57.3253729Z Installing rexml 3.2.5
+2021-10-28T15:58:57.3273837Z Fetching diff-lcs 1.4.4
+2021-10-28T15:58:57.3584285Z Installing diff-lcs 1.4.4
+2021-10-28T15:58:57.4369436Z Fetching excon 0.88.0
+2021-10-28T15:58:57.4466828Z Fetching multi_json 1.15.0
+2021-10-28T15:58:57.4793870Z Installing multi_json 1.15.0
+2021-10-28T15:58:57.4882811Z Installing excon 0.88.0
+2021-10-28T15:58:57.5276382Z Fetching hashdiff 1.0.1
+2021-10-28T15:58:57.5437170Z Fetching method_source 1.0.0
+2021-10-28T15:58:57.5564942Z Installing hashdiff 1.0.1
+2021-10-28T15:58:57.5651409Z Installing method_source 1.0.0
+2021-10-28T15:58:57.6117876Z Fetching rspec-support 3.10.2
+2021-10-28T15:58:57.6139575Z Fetching single_cov 1.6.0
+2021-10-28T15:58:57.6399548Z Installing rspec-support 3.10.2
+2021-10-28T15:58:57.6668514Z Fetching cane 3.0.0
+2021-10-28T15:58:57.6898848Z Installing single_cov 1.6.0
+2021-10-28T15:58:57.6914174Z Installing cane 3.0.0
+2021-10-28T15:58:57.7105767Z Fetching addressable 2.8.0
+2021-10-28T15:58:57.7279066Z Fetching crack 0.4.5
+2021-10-28T15:58:59.1963837Z Installing crack 0.4.5
+2021-10-28T15:58:59.1969331Z Installing addressable 2.8.0
+2021-10-28T15:58:59.1986828Z Using docker-api 2.2.0 from source at `.`
+2021-10-28T15:58:59.1987704Z Fetching pry 0.14.1
+2021-10-28T15:58:59.1988754Z Fetching rspec-core 3.10.1
+2021-10-28T15:58:59.1989624Z Installing pry 0.14.1
+2021-10-28T15:58:59.1990505Z Installing rspec-core 3.10.1
+2021-10-28T15:58:59.1991548Z Fetching rspec-expectations 3.10.1
+2021-10-28T15:58:59.1992692Z Installing rspec-expectations 3.10.1
+2021-10-28T15:58:59.1993689Z Fetching rspec-mocks 3.10.2
+2021-10-28T15:58:59.1994465Z Fetching webmock 3.14.0
+2021-10-28T15:58:59.1995962Z Installing rspec-mocks 3.10.2
+2021-10-28T15:58:59.1996903Z Fetching rspec-its 1.3.0
+2021-10-28T15:58:59.1997644Z Installing webmock 3.14.0
+2021-10-28T15:58:59.1998583Z Installing rspec-its 1.3.0
+2021-10-28T15:58:59.1999320Z Fetching rspec 3.10.0
+2021-10-28T15:58:59.2000096Z Installing rspec 3.10.0
+2021-10-28T15:58:59.2000755Z Bundle updated!
+2021-10-28T15:58:59.2081699Z ##[group]Run set -x
+2021-10-28T15:58:59.2082279Z [36;1mset -x[0m
+2021-10-28T15:58:59.2082916Z [36;1msudo apt-get remove -y docker docker-engine docker.io containerd runc ||:[0m
+2021-10-28T15:58:59.2083746Z [36;1msudo apt-get update -y[0m
+2021-10-28T15:58:59.2084745Z [36;1msudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common[0m
+2021-10-28T15:58:59.2086104Z [36;1mcurl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -[0m
+2021-10-28T15:58:59.2087372Z [36;1msudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"[0m
+2021-10-28T15:58:59.2088311Z [36;1msudo apt-get update -y[0m
+2021-10-28T15:58:59.2088879Z [36;1msudo apt-cache gencaches[0m
+2021-10-28T15:58:59.2089778Z [36;1msudo apt-get install -y docker-ce=$( apt-cache madison docker-ce | grep -e $DOCKER_VERSION | cut -f 2 -d '|' | head -1 | sed 's/\s//g' )[0m
+2021-10-28T15:58:59.2090650Z [36;1mif [ $? -ne 0 ]; then[0m
+2021-10-28T15:58:59.2091179Z [36;1m  echo "Error: Could not install ${DOCKER_VERSION}"[0m
+2021-10-28T15:58:59.2091846Z [36;1m  echo "Available docker versions:"[0m
+2021-10-28T15:58:59.2092412Z [36;1m  apt-cache madison docker-ce[0m
+2021-10-28T15:58:59.2092922Z [36;1m  exit 1[0m
+2021-10-28T15:58:59.2093337Z [36;1mfi[0m
+2021-10-28T15:58:59.2093768Z [36;1msudo systemctl start docker[0m
+2021-10-28T15:58:59.2133282Z shell: /bin/bash -e {0}
+2021-10-28T15:58:59.2133877Z env:
+2021-10-28T15:58:59.2134273Z   DOCKER_VERSION: :18.
+2021-10-28T15:58:59.2134778Z ##[endgroup]
+2021-10-28T15:58:59.2207677Z + sudo apt-get remove -y docker docker-engine docker.io containerd runc
+2021-10-28T15:59:00.8895813Z Reading package lists...
+2021-10-28T15:59:01.1403480Z Building dependency tree...
+2021-10-28T15:59:01.1422511Z Reading state information...
+2021-10-28T15:59:01.3111503Z Package 'docker-engine' is not installed, so not removed
+2021-10-28T15:59:01.3112553Z Package 'docker' is not installed, so not removed
+2021-10-28T15:59:01.3113464Z Package 'containerd' is not installed, so not removed
+2021-10-28T15:59:01.3114364Z Package 'docker.io' is not installed, so not removed
+2021-10-28T15:59:01.3115304Z Package 'runc' is not installed, so not removed
+2021-10-28T15:59:01.3741728Z 0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+2021-10-28T15:59:01.4248502Z + sudo apt-get update -y
+2021-10-28T15:59:01.5188532Z Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease
+2021-10-28T15:59:01.5190952Z Get:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+2021-10-28T15:59:01.5202321Z Get:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+2021-10-28T15:59:01.5403974Z Get:4 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease [4003 B]
+2021-10-28T15:59:01.6553833Z Get:5 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+2021-10-28T15:59:01.7426974Z Get:6 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2277 kB]
+2021-10-28T15:59:01.7907397Z Get:7 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [442 kB]
+2021-10-28T15:59:01.7909106Z Get:8 http://azure.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [513 kB]
+2021-10-28T15:59:01.8107420Z Get:9 http://azure.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [69.7 kB]
+2021-10-28T15:59:01.8125510Z Get:10 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1759 kB]
+2021-10-28T15:59:01.8450920Z Get:11 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [378 kB]
+2021-10-28T15:59:01.8581691Z Get:12 http://ppa.launchpad.net/ondrej/php/ubuntu bionic InRelease [20.8 kB]
+2021-10-28T15:59:01.9570547Z Get:13 https://packages.microsoft.com/ubuntu/18.04/prod bionic/main amd64 Packages [220 kB]
+2021-10-28T15:59:02.1003137Z Get:14 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1931 kB]
+2021-10-28T15:59:02.2060488Z Hit:15 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease
+2021-10-28T15:59:02.3548761Z Get:16 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [349 kB]
+2021-10-28T15:59:02.3617279Z Get:17 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [488 kB]
+2021-10-28T15:59:02.3681361Z Get:18 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [65.8 kB]
+2021-10-28T15:59:02.3697730Z Get:19 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1144 kB]
+2021-10-28T15:59:02.3970450Z Get:20 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [262 kB]
+2021-10-28T15:59:02.4296560Z Get:21 http://ppa.launchpad.net/ondrej/php/ubuntu bionic/main amd64 Packages [101 kB]
+2021-10-28T15:59:06.3541267Z Fetched 10.3 MB in 2s (4978 kB/s)
+2021-10-28T15:59:07.4916034Z Reading package lists...
+2021-10-28T15:59:07.5451770Z + sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+2021-10-28T15:59:07.6187050Z Reading package lists...
+2021-10-28T15:59:07.8286278Z Building dependency tree...
+2021-10-28T15:59:07.8299882Z Reading state information...
+2021-10-28T15:59:07.9994670Z ca-certificates is already the newest version (20210119~18.04.2).
+2021-10-28T15:59:07.9995678Z curl is already the newest version (7.58.0-2ubuntu3.16).
+2021-10-28T15:59:07.9996783Z software-properties-common is already the newest version (0.96.24.32.14).
+2021-10-28T15:59:07.9997928Z apt-transport-https is already the newest version (1.6.14).
+2021-10-28T15:59:08.0395411Z The following NEW packages will be installed:
+2021-10-28T15:59:08.0401845Z   gnupg-agent
+2021-10-28T15:59:08.0637369Z 0 upgraded, 1 newly installed, 0 to remove and 234 not upgraded.
+2021-10-28T15:59:08.0958994Z Need to get 4864 B of archives.
+2021-10-28T15:59:08.0960153Z After this operation, 43.0 kB of additional disk space will be used.
+2021-10-28T15:59:08.0962228Z Get:1 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 gnupg-agent all 2.2.4-1ubuntu1.4 [4864 B]
+2021-10-28T15:59:08.5165379Z Fetched 4864 B in 0s (0 B/s)
+2021-10-28T15:59:08.5577524Z Selecting previously unselected package gnupg-agent.
+2021-10-28T15:59:08.5848702Z (Reading database ... 
+2021-10-28T15:59:08.5849627Z (Reading database ... 5%
+2021-10-28T15:59:08.5850556Z (Reading database ... 10%
+2021-10-28T15:59:08.5851131Z (Reading database ... 15%
+2021-10-28T15:59:08.5851618Z (Reading database ... 20%
+2021-10-28T15:59:08.5852829Z (Reading database ... 25%
+2021-10-28T15:59:08.5853325Z (Reading database ... 30%
+2021-10-28T15:59:08.5853859Z (Reading database ... 35%
+2021-10-28T15:59:08.5854381Z (Reading database ... 40%
+2021-10-28T15:59:08.5854849Z (Reading database ... 45%
+2021-10-28T15:59:08.5855818Z (Reading database ... 50%
+2021-10-28T15:59:08.6316059Z (Reading database ... 55%
+2021-10-28T15:59:08.6785257Z (Reading database ... 60%
+2021-10-28T15:59:08.7124863Z (Reading database ... 65%
+2021-10-28T15:59:08.7798429Z (Reading database ... 70%
+2021-10-28T15:59:08.8423122Z (Reading database ... 75%
+2021-10-28T15:59:08.9519891Z (Reading database ... 80%
+2021-10-28T15:59:09.0050681Z (Reading database ... 85%
+2021-10-28T15:59:09.0689818Z (Reading database ... 90%
+2021-10-28T15:59:09.1180756Z (Reading database ... 95%
+2021-10-28T15:59:09.1181967Z (Reading database ... 100%
+2021-10-28T15:59:09.1183360Z (Reading database ... 243005 files and directories currently installed.)
+2021-10-28T15:59:09.1286913Z Preparing to unpack .../gnupg-agent_2.2.4-1ubuntu1.4_all.deb ...
+2021-10-28T15:59:09.1321468Z Unpacking gnupg-agent (2.2.4-1ubuntu1.4) ...
+2021-10-28T15:59:09.1932129Z Setting up gnupg-agent (2.2.4-1ubuntu1.4) ...
+2021-10-28T15:59:10.5865595Z + sudo apt-key add -
+2021-10-28T15:59:10.5866794Z + curl -fsSL https://download.docker.com/linux/ubuntu/gpg
+2021-10-28T15:59:10.6529520Z Warning: apt-key output should not be parsed (stdout is not a terminal)
+2021-10-28T15:59:11.1954127Z OK
+2021-10-28T15:59:11.2033878Z ++ lsb_release -cs
+2021-10-28T15:59:11.2434940Z + sudo add-apt-repository 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable'
+2021-10-28T15:59:11.8545676Z Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease
+2021-10-28T15:59:11.8548039Z Hit:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease
+2021-10-28T15:59:11.8549621Z Hit:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease
+2021-10-28T15:59:11.8839942Z Hit:4 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease
+2021-10-28T15:59:11.9356957Z Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease
+2021-10-28T15:59:11.9624076Z Get:6 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]
+2021-10-28T15:59:12.0591844Z Hit:7 http://ppa.launchpad.net/ondrej/php/ubuntu bionic InRelease
+2021-10-28T15:59:12.2703035Z Hit:8 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease
+2021-10-28T15:59:12.4580612Z Get:9 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages [21.2 kB]
+2021-10-28T15:59:15.2933323Z Fetched 85.7 kB in 1s (112 kB/s)
+2021-10-28T15:59:16.4325234Z Reading package lists...
+2021-10-28T15:59:16.4738667Z + sudo apt-get update -y
+2021-10-28T15:59:16.5637033Z Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease
+2021-10-28T15:59:16.5639255Z Hit:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease
+2021-10-28T15:59:16.5676328Z Hit:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease
+2021-10-28T15:59:16.5769157Z Hit:4 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease
+2021-10-28T15:59:16.6404380Z Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease
+2021-10-28T15:59:16.6719209Z Hit:6 https://download.docker.com/linux/ubuntu bionic InRelease
+2021-10-28T15:59:16.7703843Z Hit:7 http://ppa.launchpad.net/ondrej/php/ubuntu bionic InRelease
+2021-10-28T15:59:16.9828046Z Hit:8 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease
+2021-10-28T15:59:18.5611891Z Reading package lists...
+2021-10-28T15:59:18.6030394Z + sudo apt-cache gencaches
+2021-10-28T15:59:18.6744484Z Reading package lists...
+2021-10-28T15:59:18.6777039Z ++ apt-cache madison docker-ce
+2021-10-28T15:59:18.6782072Z ++ sed 's/\s//g'
+2021-10-28T15:59:18.6796584Z ++ head -1
+2021-10-28T15:59:18.6815342Z ++ grep -e :18.
+2021-10-28T15:59:18.6819438Z ++ cut -f 2 -d '|'
+2021-10-28T15:59:18.7724786Z + sudo apt-get install -y docker-ce=5:18.09.9~3-0~ubuntu-bionic
+2021-10-28T15:59:18.8423148Z Reading package lists...
+2021-10-28T15:59:19.0610892Z Building dependency tree...
+2021-10-28T15:59:19.0624052Z Reading state information...
+2021-10-28T15:59:19.2458964Z The following additional packages will be installed:
+2021-10-28T15:59:19.2464825Z   aufs-tools cgroupfs-mount containerd.io docker-ce-cli docker-scan-plugin
+2021-10-28T15:59:19.2997059Z The following packages will be REMOVED:
+2021-10-28T15:59:19.3004022Z   moby-buildx moby-cli moby-compose moby-containerd moby-engine moby-runc
+2021-10-28T15:59:19.3006291Z The following NEW packages will be installed:
+2021-10-28T15:59:19.3009272Z   aufs-tools cgroupfs-mount containerd.io docker-ce docker-ce-cli
+2021-10-28T15:59:19.3024834Z   docker-scan-plugin
+2021-10-28T15:59:19.3284009Z 0 upgraded, 6 newly installed, 6 to remove and 232 not upgraded.
+2021-10-28T15:59:19.3651036Z Need to get 86.2 MB of archives.
+2021-10-28T15:59:19.3652324Z After this operation, 13.1 MB disk space will be freed.
+2021-10-28T15:59:19.3654080Z Get:1 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 aufs-tools amd64 1:4.9+20170918-1ubuntu1 [104 kB]
+2021-10-28T15:59:19.3692388Z Get:2 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 cgroupfs-mount all 1.4 [6320 B]
+2021-10-28T15:59:19.4817886Z Get:3 https://download.docker.com/linux/ubuntu bionic/stable amd64 containerd.io amd64 1.4.11-1 [23.7 MB]
+2021-10-28T15:59:20.0284447Z Get:4 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce-cli amd64 5:20.10.10~3-0~ubuntu-bionic [38.8 MB]
+2021-10-28T15:59:20.7504029Z Get:5 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce amd64 5:18.09.9~3-0~ubuntu-bionic [20.0 MB]
+2021-10-28T15:59:21.0941147Z Get:6 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-scan-plugin amd64 0.9.0~ubuntu-bionic [3518 kB]
+2021-10-28T15:59:21.6310741Z Fetched 86.2 MB in 2s (48.2 MB/s)
+2021-10-28T15:59:21.6663494Z (Reading database ... 
+2021-10-28T15:59:21.6664041Z (Reading database ... 5%
+2021-10-28T15:59:21.6664537Z (Reading database ... 10%
+2021-10-28T15:59:21.6665013Z (Reading database ... 15%
+2021-10-28T15:59:21.6665507Z (Reading database ... 20%
+2021-10-28T15:59:21.6665980Z (Reading database ... 25%
+2021-10-28T15:59:21.6666465Z (Reading database ... 30%
+2021-10-28T15:59:21.6666985Z (Reading database ... 35%
+2021-10-28T15:59:21.6667460Z (Reading database ... 40%
+2021-10-28T15:59:21.6667958Z (Reading database ... 45%
+2021-10-28T15:59:21.6668429Z (Reading database ... 50%
+2021-10-28T15:59:21.6703116Z (Reading database ... 55%
+2021-10-28T15:59:21.6745365Z (Reading database ... 60%
+2021-10-28T15:59:21.6776227Z (Reading database ... 65%
+2021-10-28T15:59:21.6955262Z (Reading database ... 70%
+2021-10-28T15:59:21.6980963Z (Reading database ... 75%
+2021-10-28T15:59:21.7457881Z (Reading database ... 80%
+2021-10-28T15:59:21.7530988Z (Reading database ... 85%
+2021-10-28T15:59:21.7648443Z (Reading database ... 90%
+2021-10-28T15:59:21.7703243Z (Reading database ... 95%
+2021-10-28T15:59:21.7703835Z (Reading database ... 100%
+2021-10-28T15:59:21.7704546Z (Reading database ... 243009 files and directories currently installed.)
+2021-10-28T15:59:21.7806238Z Removing moby-buildx (0.6.0+azure-1) ...
+2021-10-28T15:59:21.8059869Z Removing moby-compose (2.0.0-1) ...
+2021-10-28T15:59:21.8272977Z Removing moby-cli (20.10.9+azure-1) ...
+2021-10-28T15:59:21.9059675Z Removing moby-engine (20.10.9+azure-1) ...
+2021-10-28T15:59:22.4940820Z Removing moby-containerd (1.4.11+azure-1) ...
+2021-10-28T15:59:22.9266328Z Removing moby-runc (1.0.2+azure-1) ...
+2021-10-28T15:59:22.9926011Z Selecting previously unselected package aufs-tools.
+2021-10-28T15:59:22.9998462Z (Reading database ... 
+2021-10-28T15:59:22.9999105Z (Reading database ... 5%
+2021-10-28T15:59:23.0000164Z (Reading database ... 10%
+2021-10-28T15:59:23.0000724Z (Reading database ... 15%
+2021-10-28T15:59:23.0001131Z (Reading database ... 20%
+2021-10-28T15:59:23.0001577Z (Reading database ... 25%
+2021-10-28T15:59:23.0002000Z (Reading database ... 30%
+2021-10-28T15:59:23.0002405Z (Reading database ... 35%
+2021-10-28T15:59:23.0002825Z (Reading database ... 40%
+2021-10-28T15:59:23.0003231Z (Reading database ... 45%
+2021-10-28T15:59:23.0003862Z (Reading database ... 50%
+2021-10-28T15:59:23.0040450Z (Reading database ... 55%
+2021-10-28T15:59:23.0083812Z (Reading database ... 60%
+2021-10-28T15:59:23.0112920Z (Reading database ... 65%
+2021-10-28T15:59:23.0301810Z (Reading database ... 70%
+2021-10-28T15:59:23.0327600Z (Reading database ... 75%
+2021-10-28T15:59:23.0845081Z (Reading database ... 80%
+2021-10-28T15:59:23.0917888Z (Reading database ... 85%
+2021-10-28T15:59:23.1038175Z (Reading database ... 90%
+2021-10-28T15:59:23.1092179Z (Reading database ... 95%
+2021-10-28T15:59:23.1093129Z (Reading database ... 100%
+2021-10-28T15:59:23.1094065Z (Reading database ... 242750 files and directories currently installed.)
+2021-10-28T15:59:23.1200037Z Preparing to unpack .../0-aufs-tools_1%3a4.9+20170918-1ubuntu1_amd64.deb ...
+2021-10-28T15:59:23.1229907Z Unpacking aufs-tools (1:4.9+20170918-1ubuntu1) ...
+2021-10-28T15:59:23.1665503Z Selecting previously unselected package cgroupfs-mount.
+2021-10-28T15:59:23.1824496Z Preparing to unpack .../1-cgroupfs-mount_1.4_all.deb ...
+2021-10-28T15:59:23.1914474Z Unpacking cgroupfs-mount (1.4) ...
+2021-10-28T15:59:23.2224869Z Selecting previously unselected package containerd.io.
+2021-10-28T15:59:23.2389827Z Preparing to unpack .../2-containerd.io_1.4.11-1_amd64.deb ...
+2021-10-28T15:59:23.2402509Z Unpacking containerd.io (1.4.11-1) ...
+2021-10-28T15:59:25.5687268Z Selecting previously unselected package docker-ce-cli.
+2021-10-28T15:59:25.5897115Z Preparing to unpack .../3-docker-ce-cli_5%3a20.10.10~3-0~ubuntu-bionic_amd64.deb ...
+2021-10-28T15:59:25.5908621Z Unpacking docker-ce-cli (5:20.10.10~3-0~ubuntu-bionic) ...
+2021-10-28T15:59:29.0700682Z Selecting previously unselected package docker-ce.
+2021-10-28T15:59:29.0914573Z Preparing to unpack .../4-docker-ce_5%3a18.09.9~3-0~ubuntu-bionic_amd64.deb ...
+2021-10-28T15:59:29.0931643Z Unpacking docker-ce (5:18.09.9~3-0~ubuntu-bionic) ...
+2021-10-28T15:59:31.2664028Z Selecting previously unselected package docker-scan-plugin.
+2021-10-28T15:59:31.2867669Z Preparing to unpack .../5-docker-scan-plugin_0.9.0~ubuntu-bionic_amd64.deb ...
+2021-10-28T15:59:31.2876919Z Unpacking docker-scan-plugin (0.9.0~ubuntu-bionic) ...
+2021-10-28T15:59:31.6858152Z Setting up aufs-tools (1:4.9+20170918-1ubuntu1) ...
+2021-10-28T15:59:31.6890317Z Setting up containerd.io (1.4.11-1) ...
+2021-10-28T15:59:32.1648628Z Setting up docker-scan-plugin (0.9.0~ubuntu-bionic) ...
+2021-10-28T15:59:32.1674252Z Setting up cgroupfs-mount (1.4) ...
+2021-10-28T15:59:32.4890429Z Setting up docker-ce-cli (5:20.10.10~3-0~ubuntu-bionic) ...
+2021-10-28T15:59:32.4915385Z Setting up docker-ce (5:18.09.9~3-0~ubuntu-bionic) ...
+2021-10-28T15:59:32.5046032Z update-alternatives: using /usr/bin/dockerd-ce to provide /usr/bin/dockerd (dockerd) in auto mode
+2021-10-28T15:59:34.3607023Z Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
+2021-10-28T15:59:34.7242619Z Processing triggers for systemd (237-3ubuntu10.52) ...
+2021-10-28T15:59:34.8706917Z Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+2021-10-28T15:59:37.7030736Z Processing triggers for ureadahead (0.100.0-21) ...
+2021-10-28T15:59:39.1165719Z + '[' 0 -ne 0 ']'
+2021-10-28T15:59:39.1166870Z + sudo systemctl start docker
+2021-10-28T15:59:39.1336700Z ##[group]Run bundle exec rake
+2021-10-28T15:59:39.1337244Z [36;1mbundle exec rake[0m
+2021-10-28T15:59:39.1378312Z shell: /bin/bash -e {0}
+2021-10-28T15:59:39.1378726Z ##[endgroup]
+2021-10-28T15:59:39.6493544Z Using default tag: latest
+2021-10-28T15:59:40.2831027Z latest: Pulling from swipely/base
+2021-10-28T15:59:40.2854067Z 0e4cf48b157f: Pulling fs layer
+2021-10-28T15:59:45.7280927Z 0e4cf48b157f: Verifying Checksum
+2021-10-28T15:59:45.7281642Z 0e4cf48b157f: Download complete
+2021-10-28T15:59:45.7814519Z 0e4cf48b157f: Pull complete
+2021-10-28T15:59:45.7835219Z Digest: sha256:e68693f560d833202a817ca6d8d969019db7cb777ddd270c6a8d20e340da2a97
+2021-10-28T15:59:45.7847575Z Status: Downloaded newer image for swipely/base:latest
+2021-10-28T15:59:45.7852323Z docker.io/swipely/base:latest
+2021-10-28T15:59:45.8166153Z Using default tag: latest
+2021-10-28T15:59:46.3926693Z latest: Pulling from library/registry
+2021-10-28T15:59:46.5906805Z 6a428f9f83b0: Already exists
+2021-10-28T15:59:46.5962858Z 90cad49de35d: Pulling fs layer
+2021-10-28T15:59:46.5963704Z b215d0b40846: Pulling fs layer
+2021-10-28T15:59:46.5964343Z 429305b6c15c: Pulling fs layer
+2021-10-28T15:59:46.5964974Z 6f7e10a4e907: Pulling fs layer
+2021-10-28T15:59:46.5973013Z 6f7e10a4e907: Waiting
+2021-10-28T15:59:47.8211026Z 90cad49de35d: Verifying Checksum
+2021-10-28T15:59:47.8213569Z 90cad49de35d: Download complete
+2021-10-28T15:59:47.9397889Z 90cad49de35d: Pull complete
+2021-10-28T15:59:48.8969831Z 6f7e10a4e907: Verifying Checksum
+2021-10-28T15:59:48.8970572Z 6f7e10a4e907: Download complete
+2021-10-28T15:59:49.0788691Z 429305b6c15c: Verifying Checksum
+2021-10-28T15:59:49.0789346Z 429305b6c15c: Download complete
+2021-10-28T16:00:00.4570486Z b215d0b40846: Download complete
+2021-10-28T16:00:00.6581608Z b215d0b40846: Pull complete
+2021-10-28T16:00:00.7134734Z 429305b6c15c: Pull complete
+2021-10-28T16:00:00.7688937Z 6f7e10a4e907: Pull complete
+2021-10-28T16:00:00.7706225Z Digest: sha256:265d4a5ed8bf0df27d1107edb00b70e658ee9aa5acb3f37336c5a17db634481e
+2021-10-28T16:00:00.7722204Z Status: Downloaded newer image for registry:latest
+2021-10-28T16:00:00.7728161Z docker.io/library/registry:latest
+2021-10-28T16:00:00.8065549Z Using default tag: latest
+2021-10-28T16:00:04.4505056Z latest: Pulling from library/busybox
+2021-10-28T16:00:04.6352895Z 01c2cdc13739: Pulling fs layer
+2021-10-28T16:00:06.6511046Z 01c2cdc13739: Verifying Checksum
+2021-10-28T16:00:06.6513850Z 01c2cdc13739: Download complete
+2021-10-28T16:00:06.7362274Z 01c2cdc13739: Pull complete
+2021-10-28T16:00:06.7383442Z Digest: sha256:15e927f78df2cc772b70713543d6b651e3cd8370abf86b2ea4644a9fba21107f
+2021-10-28T16:00:06.7403097Z Status: Downloaded newer image for busybox:latest
+2021-10-28T16:00:06.7407061Z docker.io/library/busybox:latest
+2021-10-28T16:00:06.7736425Z Using default tag: latest
+2021-10-28T16:00:07.3709880Z latest: Pulling from tianon/true
+2021-10-28T16:00:07.3710623Z c53fb220cbad: Pulling fs layer
+2021-10-28T16:00:08.7428474Z c53fb220cbad: Download complete
+2021-10-28T16:00:08.7951870Z c53fb220cbad: Pull complete
+2021-10-28T16:00:08.7969403Z Digest: sha256:009cce421096698832595ce039aa13fa44327d96beedb84282a69d3dbcf5a81b
+2021-10-28T16:00:08.7988211Z Status: Downloaded newer image for tianon/true:latest
+2021-10-28T16:00:08.8003936Z docker.io/tianon/true:latest
+2021-10-28T16:00:09.3906882Z stable: Pulling from library/debian
+2021-10-28T16:00:09.6096521Z 55cb80d28193: Pulling fs layer
+2021-10-28T16:03:15.8461380Z 55cb80d28193: Download complete
+2021-10-28T16:03:17.4221272Z 55cb80d28193: Pull complete
+2021-10-28T16:03:17.4243789Z Digest: sha256:9de81807d160cd87c476ffe90215d85478d1d2e2c1d4973b54d993a34d3986de
+2021-10-28T16:03:17.4256780Z Status: Downloaded newer image for debian:stable
+2021-10-28T16:03:17.4259774Z docker.io/library/debian:stable
+2021-10-28T16:03:18.8233859Z /opt/hostedtoolcache/Ruby/2.5.9/x64/bin/ruby -I/opt/hostedtoolcache/Ruby/2.5.9/x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.10.1/lib:/opt/hostedtoolcache/Ruby/2.5.9/x64/lib/ruby/gems/2.5.0/gems/rspec-support-3.10.2/lib /opt/hostedtoolcache/Ruby/2.5.9/x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.10.1/exe/rspec --pattern spec/\*\*/\*_spec.rb
+2021-10-28T16:03:19.4033303Z 
+2021-10-28T16:03:19.4034123Z Randomized with seed 796
+2021-10-28T16:03:19.4034425Z 
+2021-10-28T16:03:19.4035649Z Docker::Container
+2021-10-28T16:03:19.4041527Z   .prune
+2021-10-28T16:03:19.4073574Z [32m    prune containers[0m
+2021-10-28T16:03:19.4075660Z   #streaming_logs
+2021-10-28T16:03:19.4078133Z     when selecting stdout
+2021-10-28T16:03:20.0109467Z [32m      returns blank logs[0m
+2021-10-28T16:03:20.0112733Z     when passing a block
+2021-10-28T16:03:20.6198369Z [32m      returns `hello`[0m
+2021-10-28T16:03:20.6199010Z     when not selecting any stream
+2021-10-28T16:03:21.2228472Z [32m      raises a client error[0m
+2021-10-28T16:03:21.2228969Z     when using a tty
+2021-10-28T16:03:21.8135933Z [32m      returns `hello`[0m
+2021-10-28T16:03:21.8139000Z   #exec
+2021-10-28T16:03:21.8141689Z     when tty is true
+2021-10-28T16:03:22.5358333Z [32m      returns the raw stdout/stderr output[0m
+2021-10-28T16:03:22.5360751Z     when passed only a command
+2021-10-28T16:03:25.2922159Z [32m      returns the stdout/stderr messages and exit code[0m
+2021-10-28T16:03:25.2922840Z     when passed a block
+2021-10-28T16:03:28.0334068Z [32m      streams the stdout/stderr messages[0m
+2021-10-28T16:03:28.0334686Z     when detach is true
+2021-10-28T16:03:28.7840774Z [32m      returns the Docker::Exec object[0m
+2021-10-28T16:03:28.7841919Z     when stdin object is passed
+2021-10-28T16:03:29.4457668Z [32m      returns the stdout/stderr messages[0m
+2021-10-28T16:03:29.4458761Z   .all
+2021-10-28T16:03:29.4460807Z     when the HTTP response is not a 200
+2021-10-28T16:03:29.4477763Z [32m      raises an error[0m
+2021-10-28T16:03:29.4478804Z     when the HTTP response is a 200
+2021-10-28T16:03:29.4719550Z [32m      materializes each Container into a Docker::Container[0m
+2021-10-28T16:03:29.4721385Z   #rename
+2021-10-28T16:03:30.1250535Z [32m    renames the container[0m
+2021-10-28T16:03:30.1251135Z   #read_file
+2021-10-28T16:03:30.7926794Z [32m    reads contents from files[0m
+2021-10-28T16:03:30.7927319Z   #start
+2021-10-28T16:03:31.2838932Z [32m    starts the container[0m
+2021-10-28T16:03:31.2839456Z   #top
+2021-10-28T16:03:40.7170406Z [32m    returns the top commands as an Array[0m
+2021-10-28T16:03:50.1270268Z [32m    returns the top commands as an Hash[0m
+2021-10-28T16:03:59.9018170Z [32m    returns nothing when Processes were not returned due to an error[0m
+2021-10-28T16:03:59.9018796Z   #stats
+2021-10-28T16:03:59.9019214Z     when streaming container stats
+2021-10-28T16:04:03.4879744Z [32m      yields a Hash[0m
+2021-10-28T16:04:03.4880957Z     when requesting container stats
+2021-10-28T16:04:03.5149980Z [32m      returns a Hash[0m
+2021-10-28T16:04:03.5150431Z   #logs
+2021-10-28T16:04:03.5150869Z     when selecting stdout
+2021-10-28T16:04:03.5403085Z [32m      returns blank logs[0m
+2021-10-28T16:04:03.5403640Z     when not selecting any stream
+2021-10-28T16:04:03.5764795Z [32m      raises a client error[0m
+2021-10-28T16:04:03.5765265Z   #archive_out
+2021-10-28T16:04:03.5765697Z     when the input is a directory
+2021-10-28T16:04:04.3635032Z [32m      yields each chunk of the tarred directory[0m
+2021-10-28T16:04:04.3636418Z     when the file does not exist
+2021-10-28T16:04:04.9942530Z [32m      raises an error[0m
+2021-10-28T16:04:04.9982468Z     when the input is a file
+2021-10-28T16:04:05.7105022Z [32m      yields each chunk of the tarred file[0m
+2021-10-28T16:04:05.7106271Z   #archive_in_stream
+2021-10-28T16:04:05.7107094Z     when the input is a tar
+2021-10-28T16:04:06.8569355Z [32m      file exists in the container[0m
+2021-10-28T16:04:06.8570652Z     when the input would overwrite a directory with a file
+2021-10-28T16:04:06.9861339Z [32m      raises an error[0m
+2021-10-28T16:04:06.9862466Z   #wait
+2021-10-28T16:04:07.5219774Z [32m    waits for the command to finish[0m
+2021-10-28T16:04:07.5220380Z     when an argument is given
+2021-10-28T16:04:13.1151090Z [32m      sets the :read_timeout to that amount of time[0m
+2021-10-28T16:04:13.1151720Z       and a command runs for too long
+2021-10-28T16:04:18.7492995Z [32m        raises a ServerError[0m
+2021-10-28T16:04:18.7493480Z   #to_s
+2021-10-28T16:04:18.7493777Z     to_s
+2021-10-28T16:04:18.7521894Z [32m      is expected to == "Docker::Container { :id => bf119e2, :connection => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:04:18.7522731Z   #create
+2021-10-28T16:04:18.7523155Z     when creating a container named bob
+2021-10-28T16:04:18.7705812Z [32m      should have name set to bob[0m
+2021-10-28T16:04:18.7706294Z   #export
+2021-10-28T16:04:19.3508409Z [32m    yields each chunk[0m
+2021-10-28T16:04:19.3509381Z   #attach with stdin
+2021-10-28T16:04:19.9774660Z [32m    yields the output[0m
+2021-10-28T16:04:20.8531224Z   #store_file
+2021-10-28T16:04:20.8533140Z [32m    stores content in files[0m
+2021-10-28T16:04:20.8533828Z   #restart
+2021-10-28T16:04:31.4413599Z [32m    restarts the container[0m
+2021-10-28T16:04:31.4414079Z   #update
+2021-10-28T16:04:32.0307966Z [32m    updates the container[0m
+2021-10-28T16:04:32.0347929Z   #commit
+2021-10-28T16:04:33.0330210Z [32m    creates a new Image from the  Container's changes[0m
+2021-10-28T16:04:33.0334505Z     if run is passed, it saves the command in the image
+2021-10-28T16:04:34.6014822Z [32m      saves the command[0m
+2021-10-28T16:04:34.6018197Z   .get
+2021-10-28T16:04:34.6020818Z     when the HTTP response is a 200
+2021-10-28T16:04:34.6186898Z [32m      materializes the Container into a Docker::Container[0m
+2021-10-28T16:04:34.6190173Z     when the HTTP response is not a 200
+2021-10-28T16:04:34.6204718Z [32m      raises an error[0m
+2021-10-28T16:04:34.6207323Z   #delete
+2021-10-28T16:04:34.6388733Z [32m    deletes the container[0m
+2021-10-28T16:04:34.6391578Z   #kill
+2021-10-28T16:04:35.2183863Z [32m    kills the container[0m
+2021-10-28T16:04:35.2184754Z     with a kill signal
+2021-10-28T16:04:35.9424731Z [32m      kills the container[0m
+2021-10-28T16:04:35.9428415Z   .create
+2021-10-28T16:04:35.9430853Z     when the Container does not yet exist
+2021-10-28T16:04:35.9433472Z       when the HTTP request does not return a 200
+2021-10-28T16:04:35.9443903Z [32m        raises an error[0m
+2021-10-28T16:04:35.9446621Z       when the HTTP request returns a 200
+2021-10-28T16:04:35.9664908Z [32m        sets the id[0m
+2021-10-28T16:04:35.9668300Z   #unpause
+2021-10-28T16:04:36.5672771Z [32m    unpauses the container[0m
+2021-10-28T16:04:36.5676219Z   #archive_in
+2021-10-28T16:04:36.5678715Z     when the input is a tar
+2021-10-28T16:04:37.8121665Z [32m      file exists in the container[0m
+2021-10-28T16:04:37.8125423Z   #changes
+2021-10-28T16:04:38.6849296Z [32m    returns the changes as an array[0m
+2021-10-28T16:04:38.6852689Z   #stop
+2021-10-28T16:04:39.3185865Z [32m    stops the container[0m
+2021-10-28T16:04:39.3224474Z     with a timeout
+2021-10-28T16:04:40.3306367Z [32m      extends the Excon timeout ensuring the request does not timeout before Docker[0m
+2021-10-28T16:04:40.3309828Z     without a timeout
+2021-10-28T16:04:41.3486657Z [32m      does not adjust the default Excon HTTP timeout[0m
+2021-10-28T16:04:41.3490751Z   #run
+2021-10-28T16:04:41.3493759Z     when the Container's command returns a status code of 0
+2021-10-28T16:04:42.9771968Z [32m      creates a new container to run the specified command[0m
+2021-10-28T16:04:42.9789503Z     when the Container's command does not return status code of 0
+2021-10-28T16:04:43.5657493Z [32m      raises an error[0m
+2021-10-28T16:04:43.5661632Z   #pause
+2021-10-28T16:04:44.1965497Z [32m    pauses the container[0m
+2021-10-28T16:04:44.1968637Z   #attach
+2021-10-28T16:04:44.1971075Z     with very small chunks
+2021-10-28T16:04:46.7897185Z [32m      yields each chunk[0m
+2021-10-28T16:04:46.7899484Z     with normal sized chunks
+2021-10-28T16:04:49.4603606Z [32m      yields each chunk[0m
+2021-10-28T16:04:49.4607133Z   #json
+2021-10-28T16:04:49.4797440Z [32m    returns the description as a Hash[0m
+2021-10-28T16:04:49.4800756Z 
+2021-10-28T16:04:49.4802324Z Coverage
+2021-10-28T16:04:49.4811564Z [32m  has coverage for all tests[0m
+2021-10-28T16:04:49.4822169Z [32m  has tests for all files[0m
+2021-10-28T16:04:49.4825054Z 
+2021-10-28T16:04:49.4826826Z Docker::Util
+2021-10-28T16:04:49.4863866Z   .build_auth_header
+2021-10-28T16:04:49.4869737Z [32m    does not contain newlines[0m
+2021-10-28T16:04:49.4871934Z     given credentials as a String
+2021-10-28T16:04:49.4876946Z [32m      returns an X-Registry-Auth header encoded[0m
+2021-10-28T16:04:49.4879300Z     given credentials as a Hash
+2021-10-28T16:04:49.4890694Z [32m      returns an X-Registry-Auth header encoded[0m
+2021-10-28T16:04:49.4893130Z   .parse_json
+2021-10-28T16:04:49.4895756Z     when the argument is 'null'
+2021-10-28T16:04:49.4900225Z [32m      is expected to be nil[0m
+2021-10-28T16:04:49.4902369Z     when the argument is not valid JSON
+2021-10-28T16:04:49.4908777Z [32m      raises an error[0m
+2021-10-28T16:04:49.4910896Z     when the argument is empty
+2021-10-28T16:04:49.4914865Z [32m      is expected to be nil[0m
+2021-10-28T16:04:49.4916909Z     when the argument is valid JSON
+2021-10-28T16:04:49.4921161Z [32m      parses the JSON into a Hash[0m
+2021-10-28T16:04:49.4923179Z     when the argument is nil
+2021-10-28T16:04:49.4926941Z [32m      is expected to be nil[0m
+2021-10-28T16:04:49.4945245Z   .filesystem_permissions
+2021-10-28T16:04:49.4951683Z [32m    returns the permissions on a file[0m
+2021-10-28T16:04:49.4953856Z   .create_dir_tar
+2021-10-28T16:04:49.4964965Z [32m    packs regular files[0m
+2021-10-28T16:04:49.4983669Z [32m    packs nested files, but not directory entries[0m
+2021-10-28T16:04:49.5023642Z [32m    creates a tarball[0m
+2021-10-28T16:04:49.5026172Z     .dockerignore
+2021-10-28T16:04:49.5042015Z [32m      ignores multiple patterns[0m
+2021-10-28T16:04:49.5061886Z [32m      passes all files when there is no .dockerignore[0m
+2021-10-28T16:04:49.5106133Z [32m      ignores directories with dir wildcard[0m
+2021-10-28T16:04:49.5127908Z [32m      ignores files[0m
+2021-10-28T16:04:49.5183689Z [32m      ignores whitespace[0m
+2021-10-28T16:04:49.5196770Z [32m      ignores comments[0m
+2021-10-28T16:04:49.5215874Z [32m      ignores directories[0m
+2021-10-28T16:04:49.5236685Z [32m      ignores files with wildcard[0m
+2021-10-28T16:04:49.5402094Z [32m      ignores files with dir wildcard but handles exceptions[0m
+2021-10-28T16:04:49.5464319Z [32m      ignores files with dir wildcard[0m
+2021-10-28T16:04:49.5478736Z [32m      ignores folders[0m
+2021-10-28T16:04:49.5500891Z [32m      ignores directories with dir double wildcard[0m
+2021-10-28T16:04:49.5523034Z [32m      does not interpret comments[0m
+2021-10-28T16:04:49.5543540Z [32m      ignores files[0m
+2021-10-28T16:04:49.5563153Z [32m      ignores based on wildcards[0m
+2021-10-28T16:04:49.5605785Z [32m      ignores directories with dir wildcard[0m
+2021-10-28T16:04:49.5627784Z [32m      passes all files when there is an empty .dockerignore[0m
+2021-10-28T16:04:49.5630702Z   .fix_json
+2021-10-28T16:04:49.5635483Z [32m    fixes the "JSON" response that Docker returns[0m
+2021-10-28T16:04:49.5637781Z   .build_config_header
+2021-10-28T16:04:49.5642481Z [32m    does not contain newlines[0m
+2021-10-28T16:04:49.5644671Z     given credentials as a String
+2021-10-28T16:04:49.5650096Z [32m      returns an X-Registry-Config header encoded[0m
+2021-10-28T16:04:49.5652379Z     given credentials as a Hash
+2021-10-28T16:04:49.5657174Z [32m      returns an X-Registry-Config header encoded[0m
+2021-10-28T16:04:49.5660311Z 
+2021-10-28T16:04:49.5662070Z Docker::Messages
+2021-10-28T16:04:49.5664768Z   .decipher_messages
+2021-10-28T16:04:49.5667371Z     given a header for text longer then 255 characters
+2021-10-28T16:04:49.5669490Z       behaves like decipher_messages of raw_test
+2021-10-28T16:04:49.5671562Z         behaves like two equal messages
+2021-10-28T16:04:49.5676497Z [32m          has the same messages as we expect[0m
+2021-10-28T16:04:49.5679223Z     given a single header
+2021-10-28T16:04:49.5681432Z       behaves like decipher_messages of raw_test
+2021-10-28T16:04:49.5683495Z         behaves like two equal messages
+2021-10-28T16:04:49.5708005Z [32m          has the same messages as we expect[0m
+2021-10-28T16:04:49.5710612Z     given both standard out and standard error
+2021-10-28T16:04:49.5712876Z       behaves like decipher_messages of raw_test
+2021-10-28T16:04:49.5715027Z         behaves like two equal messages
+2021-10-28T16:04:49.5719446Z [32m          has the same messages as we expect[0m
+2021-10-28T16:04:49.5721929Z     given two headers
+2021-10-28T16:04:49.5724035Z       behaves like decipher_messages of raw_test
+2021-10-28T16:04:49.5726288Z         behaves like two equal messages
+2021-10-28T16:04:49.5730807Z [32m          has the same messages as we expect[0m
+2021-10-28T16:04:49.5733318Z   #append
+2021-10-28T16:04:49.5735378Z     appending one set of messages on another
+2021-10-28T16:04:49.5737482Z       without a buffer
+2021-10-28T16:04:49.5739493Z         behaves like two equal messages
+2021-10-28T16:04:49.5745158Z [32m          has the same messages as we expect[0m
+2021-10-28T16:04:49.5747462Z       with a buffer
+2021-10-28T16:04:49.5749551Z         behaves like two equal messages
+2021-10-28T16:04:49.5753984Z [32m          has the same messages as we expect[0m
+2021-10-28T16:04:49.5757581Z 
+2021-10-28T16:04:49.5759038Z Docker
+2021-10-28T16:04:49.5763859Z [32m  is expected to be a kind of Module[0m
+2021-10-28T16:04:49.5766343Z   #authenticate!
+2021-10-28T16:04:49.5768453Z     with valid credentials
+2021-10-28T16:04:49.5772843Z [33m      logs in and sets the creds (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:04:49.5775332Z     with invalid credentials
+2021-10-28T16:04:49.9053280Z [32m      raises an error and doesn't set the creds[0m
+2021-10-28T16:04:49.9056781Z   default url and connection
+2021-10-28T16:04:49.9060462Z     when the DOCKER_* ENV variables aren't set
+2021-10-28T16:04:49.9063241Z       options
+2021-10-28T16:04:49.9072793Z [32m        is expected to == {}[0m
+2021-10-28T16:04:49.9075223Z       connection
+2021-10-28T16:04:49.9104292Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9106924Z       url
+2021-10-28T16:04:49.9114974Z [32m        is expected to == "unix:///var/run/docker.sock"[0m
+2021-10-28T16:04:49.9117720Z     DOCKER_URL should take precedence over DOCKER_HOST
+2021-10-28T16:04:49.9120145Z       url
+2021-10-28T16:04:49.9150475Z [32m        is expected to == "tcp://someotherserver:8103"[0m
+2021-10-28T16:04:49.9153246Z       connection
+2021-10-28T16:04:49.9161613Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9163890Z       options
+2021-10-28T16:04:49.9170500Z [32m        is expected to == {}[0m
+2021-10-28T16:04:49.9176809Z     when the DOCKER_CERT_PATH and DOCKER_HOST ENV variables are set
+2021-10-28T16:04:49.9179769Z       connection
+2021-10-28T16:04:49.9193315Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9195767Z       options
+2021-10-28T16:04:49.9231611Z [32m        is expected to == {:client_cert=>"/boot2dockert/cert/path/cert.pem", :client_key=>"/boot2dockert/cert/path/key.pem", :scheme=>"https", :ssl_ca_file=>"/boot2dockert/cert/path/ca.pem"}[0m
+2021-10-28T16:04:49.9234302Z       url
+2021-10-28T16:04:49.9241911Z [32m        is expected to == "tcp://someserver:8103"[0m
+2021-10-28T16:04:49.9244391Z     when the DOCKER_* ENV variables are set
+2021-10-28T16:04:49.9246624Z       url
+2021-10-28T16:04:49.9253419Z [32m        is expected to == "unixs:///var/run/not-docker.sock"[0m
+2021-10-28T16:04:49.9255652Z       options
+2021-10-28T16:04:49.9261907Z [32m        is expected to == {}[0m
+2021-10-28T16:04:49.9264276Z       connection
+2021-10-28T16:04:49.9271979Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9274979Z     when the DOCKER_HOST ENV variable is set
+2021-10-28T16:04:49.9277538Z       url
+2021-10-28T16:04:49.9284533Z [32m        is expected to == "tcp://someserver:8103"[0m
+2021-10-28T16:04:49.9286883Z       options
+2021-10-28T16:04:49.9304150Z [32m        is expected to == {}[0m
+2021-10-28T16:04:49.9306537Z       connection
+2021-10-28T16:04:49.9315023Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9317559Z     when the DOCKER_HOST is set and uses default tcp://
+2021-10-28T16:04:49.9319854Z       options
+2021-10-28T16:04:49.9326522Z [32m        is expected to == {}[0m
+2021-10-28T16:04:49.9343260Z       connection
+2021-10-28T16:04:49.9352007Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9354248Z       url
+2021-10-28T16:04:49.9361484Z [32m        is expected to == "tcp://localhost:2375"[0m
+2021-10-28T16:04:49.9364043Z     when the DOCKER_CERT_PATH and DOCKER_SSL_VERIFY ENV variables are set
+2021-10-28T16:04:49.9366358Z       url
+2021-10-28T16:04:49.9374003Z [32m        is expected to == "tcp://someserver:8103"[0m
+2021-10-28T16:04:49.9376172Z       options
+2021-10-28T16:04:49.9424343Z [32m        is expected to == {:client_cert=>"/boot2dockert/cert/path/cert.pem", :client_key=>"/boot2dockert/cert/path/key.pem", :scheme=>"https", :ssl_ca_file=>"/boot2dockert/cert/path/ca.pem", :ssl_verify_peer=>false}[0m
+2021-10-28T16:04:49.9428554Z       connection
+2021-10-28T16:04:49.9437341Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:04:49.9440312Z   #info
+2021-10-28T16:04:49.9653934Z [32m    returns the info as a Hash[0m
+2021-10-28T16:04:49.9658010Z   #version
+2021-10-28T16:04:49.9678838Z [32m    returns the version as a Hash[0m
+2021-10-28T16:04:49.9681145Z   #reset_connection!
+2021-10-28T16:04:49.9719282Z [32m    sets the @connection to nil[0m
+2021-10-28T16:04:49.9723205Z   #options=
+2021-10-28T16:04:49.9729657Z [32m    calls #reset_connection![0m
+2021-10-28T16:04:49.9731679Z   #url=
+2021-10-28T16:04:49.9783637Z [32m    calls #reset_connection![0m
+2021-10-28T16:04:49.9786120Z   #ping
+2021-10-28T16:04:49.9803291Z [32m    returns the status as a String[0m
+2021-10-28T16:04:49.9805767Z 
+2021-10-28T16:04:49.9807481Z Docker::Volume
+2021-10-28T16:04:49.9809859Z   .get
+2021-10-28T16:04:50.9878452Z [32m    gets volume details[0m
+2021-10-28T16:04:50.9881507Z   .prune
+2021-10-28T16:04:50.9900673Z [32m    prune volumes[0m
+2021-10-28T16:04:50.9903242Z   .all
+2021-10-28T16:04:51.9999527Z [32m    gets a list of volumes[0m
+2021-10-28T16:04:52.0003408Z   #remove
+2021-10-28T16:04:53.0077812Z [32m    removes a volume[0m
+2021-10-28T16:04:53.0080742Z   .create
+2021-10-28T16:04:53.0144267Z [32m    creates a volume[0m
+2021-10-28T16:04:53.0147603Z 
+2021-10-28T16:04:53.0149390Z Docker::Network
+2021-10-28T16:04:53.0152313Z   #connect
+2021-10-28T16:04:54.0670993Z [32m    connects a container to a network[0m
+2021-10-28T16:04:54.0674855Z   .create
+2021-10-28T16:04:54.2210546Z [32m    creates a Network[0m
+2021-10-28T16:04:54.2213898Z   .prune
+2021-10-28T16:04:54.2237806Z [32m    prune networks[0m
+2021-10-28T16:04:54.2240108Z   #to_s
+2021-10-28T16:04:54.2242176Z     to_s
+2021-10-28T16:04:54.2266245Z [32m      is expected to == "Docker::Network { :id => a6c5ffd25e07a6c906accf804174b5eb6a9d2f9e07bccb8f5aa4f4de5be6d01d, :info => ...ction => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:04:54.2268027Z   .get
+2021-10-28T16:04:54.3690098Z [32m    returns a network[0m
+2021-10-28T16:04:54.3691224Z   #disconnect
+2021-10-28T16:04:56.3828807Z [32m    connects a container to a network[0m
+2021-10-28T16:04:56.3829734Z   #remove
+2021-10-28T16:04:56.5514832Z [32m    removes the Network[0m
+2021-10-28T16:04:56.5515671Z   .all
+2021-10-28T16:04:57.3144964Z [32m    should return all networks[0m
+2021-10-28T16:04:57.3148059Z   .remove
+2021-10-28T16:04:57.4452523Z [32m    removes the Network[0m
+2021-10-28T16:04:57.4456429Z 
+2021-10-28T16:04:57.4458311Z Docker::Connection
+2021-10-28T16:04:57.4461376Z   #initialize
+2021-10-28T16:04:57.4464433Z     when the first argument is a String
+2021-10-28T16:04:57.4466878Z       and the second argument is a Hash
+2021-10-28T16:04:57.4472805Z [32m        sets the url and options[0m
+2021-10-28T16:04:57.4474987Z       and the url is a unix socket
+2021-10-28T16:04:57.4503805Z [32m        sets the socket path in the options[0m
+2021-10-28T16:04:57.4506441Z       but the second argument is not a Hash
+2021-10-28T16:04:57.4511396Z [32m        raises an error[0m
+2021-10-28T16:04:57.4513780Z     url conversion to uri
+2021-10-28T16:04:57.4516074Z       when the url does not contain a scheme
+2021-10-28T16:04:57.4520800Z [32m        adds the scheme to the url[0m
+2021-10-28T16:04:57.4522957Z       when the url is a complete uri
+2021-10-28T16:04:57.4527456Z [32m        leaves the url intact[0m
+2021-10-28T16:04:57.4529770Z     when the first argument is not a String
+2021-10-28T16:04:57.4534662Z [32m      raises an error[0m
+2021-10-28T16:04:57.4536874Z   #to_s
+2021-10-28T16:04:57.4541468Z [32m    returns a pretty version with the url and port[0m
+2021-10-28T16:04:57.4544245Z   #put
+2021-10-28T16:04:57.4591115Z [32m    is delegated to #request[0m
+2021-10-28T16:04:57.4593550Z   #request
+2021-10-28T16:04:57.4603754Z [32m    sends #request to #resource with the compiled params[0m
+2021-10-28T16:04:57.4605963Z   #get
+2021-10-28T16:04:57.4612714Z [32m    is delegated to #request[0m
+2021-10-28T16:04:57.4614995Z   #post
+2021-10-28T16:04:57.4621243Z [32m    is delegated to #request[0m
+2021-10-28T16:04:57.4623804Z   #delete
+2021-10-28T16:04:57.4629287Z [32m    is delegated to #request[0m
+2021-10-28T16:04:57.4631422Z   #resource
+2021-10-28T16:04:57.4634263Z     resource
+2021-10-28T16:04:57.4641620Z [32m      is expected to be a kind of Excon::Connection[0m
+2021-10-28T16:04:57.4644920Z 
+2021-10-28T16:04:57.4664658Z Docker::Exec
+2021-10-28T16:04:57.4667502Z   #start!
+2021-10-28T16:04:57.4670033Z     when :detach is set to true
+2021-10-28T16:04:58.2551680Z [32m      returns empty stdout/stderr messages with exitcode[0m
+2021-10-28T16:04:58.2552671Z     when :wait set short time value
+2021-10-28T16:04:59.9792155Z [32m      raises an error[0m
+2021-10-28T16:04:59.9796458Z     when :detach is set to false
+2021-10-28T16:05:02.6805179Z [32m      returns the stdout and stderr messages[0m
+2021-10-28T16:05:02.6807957Z       block is passed
+2021-10-28T16:05:05.4755734Z [32m        attaches to the stream[0m
+2021-10-28T16:05:05.4759152Z     when the exec instance does not exist
+2021-10-28T16:05:05.4778862Z [32m      raises an error[0m
+2021-10-28T16:05:05.4781141Z     when :wait set long time value
+2021-10-28T16:05:06.2355406Z [32m      returns empty stdout and stderr messages with exitcode[0m
+2021-10-28T16:05:06.2356739Z     when the HTTP request returns a 201
+2021-10-28T16:05:06.9909455Z [32m      starts the exec instance[0m
+2021-10-28T16:05:06.9910587Z   #json
+2021-10-28T16:05:07.6648920Z [32m    returns the description as a Hash[0m
+2021-10-28T16:05:07.6649500Z   #to_s
+2021-10-28T16:05:07.6650151Z     to_s
+2021-10-28T16:05:07.6652215Z [32m      is expected to == "Docker::Exec { :id => bf119e2, :connection => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:05:07.6653022Z   .create
+2021-10-28T16:05:07.6653474Z     when the HTTP request returns a 201
+2021-10-28T16:05:08.3604615Z [32m      sets the id[0m
+2021-10-28T16:05:08.3605191Z     when the parent container does not exist
+2021-10-28T16:05:08.3617054Z [32m      raises an error[0m
+2021-10-28T16:05:08.3619423Z 
+2021-10-28T16:05:08.3620057Z Docker::Image
+2021-10-28T16:05:08.3621100Z   #insert_local
+2021-10-28T16:05:08.3622499Z     when the local file does not exist
+2021-10-28T16:05:09.1414450Z [32m      raises an error[0m
+2021-10-28T16:05:09.1415032Z     when removing intermediate containers
+2021-10-28T16:05:11.0331989Z [32m      leave no intermediate containers[0m
+2021-10-28T16:05:12.3587018Z [32m      creates a new image[0m
+2021-10-28T16:05:12.3590018Z     when there are multiple files passed
+2021-10-28T16:05:15.5994060Z [32m      creates a new Image that has each file[0m
+2021-10-28T16:05:15.5997486Z     when a directory is passed
+2021-10-28T16:05:17.5519058Z [32m      inserts the directory[0m
+2021-10-28T16:05:17.5522105Z     when the local file does exist
+2021-10-28T16:05:19.5994415Z [32m      creates a new Image that has that file[0m
+2021-10-28T16:05:19.5997602Z   #to_s
+2021-10-28T16:05:19.5999712Z     to_s
+2021-10-28T16:05:19.6007541Z [32m      is expected to == "Docker::Image { :id => bf119e2, :info => {\"id\"=>\"bf119e2\", \"Repository\"=>\"debian\", \"Tag\"=>...ction => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:05:19.6010354Z   .prune
+2021-10-28T16:05:19.6063802Z [32m    prune images[0m
+2021-10-28T16:05:19.6077796Z   #remove
+2021-10-28T16:05:19.6080381Z     when an invalid tag is given
+2021-10-28T16:05:19.6083889Z [33m      raises an error (PENDING: Not yet implemented)[0m
+2021-10-28T16:05:19.6086071Z     when a valid tag is given
+2021-10-28T16:05:19.6089182Z [33m      untags the Image (PENDING: Not yet implemented)[0m
+2021-10-28T16:05:19.6091237Z     when no name is given
+2021-10-28T16:05:23.7665002Z [32m      removes the Image[0m
+2021-10-28T16:05:23.7668289Z     when using the class
+2021-10-28T16:05:27.1425593Z [32m      removes the Image[0m
+2021-10-28T16:05:27.1428975Z   .save_stream
+2021-10-28T16:05:27.2024589Z [32m    yields each chunk of the image[0m
+2021-10-28T16:05:27.2028214Z   .search
+2021-10-28T16:05:27.4137997Z [32m    materializes each Image into a Docker::Image[0m
+2021-10-28T16:05:27.4140920Z   .build
+2021-10-28T16:05:27.4143629Z     with a valid Dockerfile
+2021-10-28T16:05:27.4146023Z       with specifying a repo in the query parameters
+2021-10-28T16:05:29.0442972Z [32m        builds an image and tags it[0m
+2021-10-28T16:05:29.0446096Z       with a block capturing build output
+2021-10-28T16:05:29.1166278Z [32m        calls the block and passes build output[0m
+2021-10-28T16:05:29.1169694Z       without query parameters
+2021-10-28T16:05:29.1960517Z [32m        builds an image[0m
+2021-10-28T16:05:29.1963948Z     with an invalid Dockerfile
+2021-10-28T16:05:29.2742310Z [32m      throws a UnexpectedResponseError[0m
+2021-10-28T16:05:29.3600972Z [32m      throws a ClientError[0m
+2021-10-28T16:05:29.3604284Z   .build_from_dir
+2021-10-28T16:05:29.3607016Z     with a valid Dockerfile
+2021-10-28T16:05:29.3609416Z       with specifying a repo in the query parameters
+2021-10-28T16:05:30.6158498Z [32m        builds the image and tags it[0m
+2021-10-28T16:05:30.6161362Z       with no query parameters
+2021-10-28T16:05:31.8370166Z [32m        builds the image[0m
+2021-10-28T16:05:31.8373259Z       with a block capturing build output
+2021-10-28T16:05:33.6313802Z [32m        calls the block and passes build output[0m
+2021-10-28T16:05:33.6316798Z         uses a cached version the second time
+2021-10-28T16:05:34.8777586Z [32m          calls the block and passes build output[0m
+2021-10-28T16:05:34.8780857Z       with credentials passed
+2021-10-28T16:05:36.5907135Z [32m        sends X-Registry-Config header[0m
+2021-10-28T16:05:36.5910577Z   #history
+2021-10-28T16:05:37.3236290Z [32m    returns the history of the Image[0m
+2021-10-28T16:05:37.3239132Z   .import
+2021-10-28T16:05:37.3241567Z     when the file does exist
+2021-10-28T16:05:37.4072544Z [32m      creates the Image[0m
+2021-10-28T16:05:37.4075533Z     when the file does not exist
+2021-10-28T16:05:37.4082516Z [32m      raises an error[0m
+2021-10-28T16:05:37.4084680Z     when the argument is a URI
+2021-10-28T16:05:37.4087195Z       when the URI is valid
+2021-10-28T16:05:37.7623949Z [32m        returns an Image[0m
+2021-10-28T16:05:37.7627299Z       when the URI is invalid
+2021-10-28T16:05:38.0184272Z [32m        raises an error[0m
+2021-10-28T16:05:38.0188219Z   .get
+2021-10-28T16:05:38.0190710Z     when the image does exist
+2021-10-28T16:05:38.0265509Z [32m      returns the new image[0m
+2021-10-28T16:05:38.0268894Z     when the image does not exist
+2021-10-28T16:05:38.0283852Z [32m      raises a not found error[0m
+2021-10-28T16:05:38.0286303Z   .exist?
+2021-10-28T16:05:38.0288562Z     when the image does exist
+2021-10-28T16:05:38.0310066Z [32m      returns true[0m
+2021-10-28T16:05:38.0312380Z     when the image does not exist
+2021-10-28T16:05:38.0323578Z [32m      return false[0m
+2021-10-28T16:05:38.0325850Z   #save_stream
+2021-10-28T16:05:38.0347841Z [32m    calls the class method[0m
+2021-10-28T16:05:38.0349949Z   #tag
+2021-10-28T16:05:38.7570982Z [32m    tags the image with the repo name[0m
+2021-10-28T16:05:38.7574401Z   #push
+2021-10-28T16:05:38.8880962Z [33m    streams output from push (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:05:39.0009272Z [33m    pushes the Image (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:05:39.0010003Z     when there are no credentials
+2021-10-28T16:05:40.7684643Z [32m      still pushes[0m
+2021-10-28T16:05:40.7688734Z     when the image was retrived by get
+2021-10-28T16:05:40.7691398Z       when no tag is specified
+2021-10-28T16:05:40.8865068Z [33m        looks up the first repo tag (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:05:40.8868580Z     when a tag is specified
+2021-10-28T16:05:40.8872701Z [33m      pushes that specific tag (PENDING: Not yet implemented)[0m
+2021-10-28T16:05:40.8875268Z   #refresh!
+2021-10-28T16:05:41.6164061Z [32m    updates the @info hash[0m
+2021-10-28T16:05:41.6166954Z     with an explicit connection
+2021-10-28T16:05:42.3034800Z [32m      updates using the provided connection[0m
+2021-10-28T16:05:42.3037969Z   .all
+2021-10-28T16:05:43.0579241Z [32m    materializes each Image into a Docker::Image[0m
+2021-10-28T16:05:43.0583327Z   .save
+2021-10-28T16:05:43.0586312Z     when no filename is specified
+2021-10-28T16:05:43.0675916Z [32m      returns raw binary data as string[0m
+2021-10-28T16:05:43.0676538Z     when a filename is specified
+2021-10-28T16:05:43.0772574Z [32m      exports tarball of image to specified file[0m
+2021-10-28T16:05:43.0773429Z   .create
+2021-10-28T16:05:43.0773778Z     image with tag
+2021-10-28T16:05:43.8023797Z [32m      supports identical fromImage and tag[0m
+2021-10-28T16:05:44.5382298Z [32m      pulls the image (symbol arguments)[0m
+2021-10-28T16:05:45.2877626Z [32m      pulls the image (string arguments)[0m
+2021-10-28T16:05:45.2878763Z     with a block capturing create output
+2021-10-28T16:09:43.3771527Z [31m      calls the block and passes build output (FAILED - 1)[0m
+2021-10-28T16:09:43.3772755Z     when the Image does not yet exist and the body is a Hash
+2021-10-28T16:09:44.1030209Z [33m      sets the id and sends Docker.creds (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:09:44.1031523Z   #run
+2021-10-28T16:09:44.1032012Z     when cmd is a String
+2021-10-28T16:09:45.4204759Z [32m      splits the String by spaces and creates a new Container[0m
+2021-10-28T16:09:45.4206436Z     command configured in image
+2021-10-28T16:09:46.8221405Z [32m      should normally show result if image has Cmd configured[0m
+2021-10-28T16:09:46.8225240Z     when using cpu shares
+2021-10-28T16:09:48.1193835Z [32m      returns 50[0m
+2021-10-28T16:09:48.1194277Z     when cmd is an Array
+2021-10-28T16:09:49.4632507Z [32m      creates a new Container[0m
+2021-10-28T16:09:49.4632992Z     when cmd is nil
+2021-10-28T16:09:49.4634641Z       no command configured in image
+2021-10-28T16:09:50.1722152Z [32m        should raise an error if no command is specified[0m
+2021-10-28T16:09:50.1722665Z   #save
+2021-10-28T16:09:50.1791393Z [31m    calls the class method (FAILED - 2)[0m
+2021-10-28T16:09:50.1791862Z   .load
+2021-10-28T16:09:50.1792229Z     when the argument is an IO
+2021-10-28T16:09:50.4281900Z [32m      loads tinan/true image from the IO[0m
+2021-10-28T16:09:50.4282432Z     when the argument is a String
+2021-10-28T16:09:50.5313958Z [32m      loads tianon/true image from the file system[0m
+2021-10-28T16:09:50.5316472Z   #json
+2021-10-28T16:09:50.5317774Z [33m    returns additional information about image image (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:09:50.5318382Z 
+2021-10-28T16:09:50.5318924Z Docker::Event
+2021-10-28T16:09:50.5319277Z   .since
+2021-10-28T16:09:51.2703736Z Docker::Event { 1635437391260600192 image pull debian:stable (name=debian) }
+2021-10-28T16:09:51.2937959Z Docker::Event { 1635437391293071795 container create c5d5f6cf3411e31d08bb1dfb37353054ac06cb40e842fb5c8b27362acaeccea0 (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=eager_williamson) }
+2021-10-28T16:09:51.3040933Z Docker::Event { 1635437391303474292 network connect a907fb22196393e3eff506dcdbc3c933232676f7c7d5b7d7dc676b40ed6adae8 (container=c5d5f6cf3411e31d08bb1dfb37353054ac06cb40e842fb5c8b27362acaeccea0, name=bridge, type=bridge) }
+2021-10-28T16:09:51.6714151Z Docker::Event { 1635437391670671915 container start c5d5f6cf3411e31d08bb1dfb37353054ac06cb40e842fb5c8b27362acaeccea0 (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=eager_williamson) }
+2021-10-28T16:09:51.8654387Z [32m    receives at least 4 events[0m
+2021-10-28T16:09:51.8655988Z   #to_s
+2021-10-28T16:09:51.8656338Z     with an old event
+2021-10-28T16:09:51.8658370Z [32m      equals the expected string[0m
+2021-10-28T16:09:51.8658813Z     with a new event
+2021-10-28T16:09:51.8659407Z [32m      equals the expected string[0m
+2021-10-28T16:09:51.8659817Z   .stream
+2021-10-28T16:09:52.5935978Z Docker::Event { 1635437392590891093 image pull debian:stable (name=debian) }
+2021-10-28T16:09:52.6113689Z Docker::Event { 1635437392610751178 container create 4b175e8e7cde56d0f0fe464ec8ea7e0e852d3cd16627324c3f4863b8a2f67c0d (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=mystifying_buck) }
+2021-10-28T16:09:52.6268166Z Docker::Event { 1635437392625954820 network connect a907fb22196393e3eff506dcdbc3c933232676f7c7d5b7d7dc676b40ed6adae8 (container=4b175e8e7cde56d0f0fe464ec8ea7e0e852d3cd16627324c3f4863b8a2f67c0d, name=bridge, type=bridge) }
+2021-10-28T16:09:53.0389977Z Docker::Event { 1635437393037759658 container start 4b175e8e7cde56d0f0fe464ec8ea7e0e852d3cd16627324c3f4863b8a2f67c0d (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=mystifying_buck) }
+2021-10-28T16:09:53.2462312Z [32m    receives at least 4 events[0m
+2021-10-28T16:09:53.2463711Z   .new_event
+2021-10-28T16:09:53.2464110Z     with an old api response
+2021-10-28T16:09:53.2466637Z [32m      returns a Docker::Event[0m
+2021-10-28T16:09:53.2467275Z     with a new api response
+2021-10-28T16:09:53.2470190Z [32m      returns a Docker::Event[0m
+2021-10-28T16:09:53.2474229Z 
+2021-10-28T16:09:53.2475448Z Pending: (Failures listed here are expected and do not affect your suite's status)
+2021-10-28T16:09:53.2476253Z [33m
+2021-10-28T16:09:53.2477103Z   1) Docker#authenticate! with valid credentials logs in and sets the creds[0m
+2021-10-28T16:09:53.2478036Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:09:53.2478845Z [36m     # ./spec/docker_spec.rb:216
+2021-10-28T16:09:53.2479462Z [0m[33m
+2021-10-28T16:09:53.2480395Z   2) Docker::Image#remove when an invalid tag is given raises an error[0m
+2021-10-28T16:09:53.2481256Z      [36m# Not yet implemented[0m
+2021-10-28T16:09:53.2482033Z [36m     # ./spec/docker/image_spec.rb:53
+2021-10-28T16:09:53.2482647Z [0m[33m
+2021-10-28T16:09:53.2483545Z   3) Docker::Image#remove when a valid tag is given untags the Image[0m
+2021-10-28T16:09:53.2484363Z      [36m# Not yet implemented[0m
+2021-10-28T16:09:53.2485109Z [36m     # ./spec/docker/image_spec.rb:49
+2021-10-28T16:09:53.2485734Z [0m[33m
+2021-10-28T16:09:53.2486549Z   4) Docker::Image#push streams output from push[0m
+2021-10-28T16:09:53.2487385Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:09:53.2488166Z [36m     # ./spec/docker/image_spec.rb:188
+2021-10-28T16:09:53.2488781Z [0m[33m
+2021-10-28T16:09:53.2489582Z   5) Docker::Image#push pushes the Image[0m
+2021-10-28T16:09:53.2490479Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:09:53.2491485Z [36m     # ./spec/docker/image_spec.rb:183
+2021-10-28T16:09:53.2492162Z [0m[33m
+2021-10-28T16:09:53.2493305Z   6) Docker::Image#push when the image was retrived by get when no tag is specified looks up the first repo tag[0m
+2021-10-28T16:09:53.2494343Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:09:53.2495123Z [36m     # ./spec/docker/image_spec.rb:205
+2021-10-28T16:09:53.2495743Z [0m[33m
+2021-10-28T16:09:53.2496680Z   7) Docker::Image#push when a tag is specified pushes that specific tag[0m
+2021-10-28T16:09:53.2497536Z      [36m# Not yet implemented[0m
+2021-10-28T16:09:53.2499971Z [36m     # ./spec/docker/image_spec.rb:195
+2021-10-28T16:09:53.2500476Z [0m[33m
+2021-10-28T16:09:53.2501453Z   8) Docker::Image.create when the Image does not yet exist and the body is a Hash sets the id and sends Docker.creds[0m
+2021-10-28T16:09:53.2502368Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:09:53.2503597Z [36m     # ./spec/docker/image_spec.rb:413
+2021-10-28T16:09:53.2504094Z [0m[33m
+2021-10-28T16:09:53.2504915Z   9) Docker::Image#json returns additional information about image image[0m
+2021-10-28T16:09:53.2505720Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:09:53.2506370Z [36m     # ./spec/docker/image_spec.rb:246
+2021-10-28T16:09:53.2506848Z [0m
+2021-10-28T16:09:53.2900977Z 
+2021-10-28T16:09:53.2901610Z Failures:
+2021-10-28T16:09:53.2901852Z 
+2021-10-28T16:09:53.2902492Z   1) Docker::Image.create with a block capturing create output calls the block and passes build output
+2021-10-28T16:09:53.2904278Z      [31mFailure/Error: [0mraise [1;34;4mNotFoundError[0m, ex.response.body[0m
+2021-10-28T16:09:53.2904954Z      [31m[0m
+2021-10-28T16:09:53.2905697Z      [31mDocker::Error::NotFoundError:[0m
+2021-10-28T16:09:53.2906507Z      [31m  {"message":"no such image: busybox: No such image: busybox:latest"}[0m
+2021-10-28T16:09:53.2907345Z      [36m# ./lib/docker/connection.rb:85:in `rescue in request'[0m
+2021-10-28T16:09:53.2908486Z      [36m# ./lib/docker/connection.rb:44:in `request'[0m
+2021-10-28T16:09:53.2909337Z      [36m# ./lib/docker/connection.rb:109:in `block (2 levels) in <class:Connection>'[0m
+2021-10-28T16:09:53.2910112Z      [36m# ./lib/docker/image.rb:138:in `get'[0m
+2021-10-28T16:09:53.2910762Z      [36m# ./lib/docker/image.rb:133:in `create'[0m
+2021-10-28T16:09:53.2911544Z      [36m# ./spec/docker/image_spec.rb:475:in `block (4 levels) in <top (required)>'[0m
+2021-10-28T16:09:53.2912225Z      [36m# ------------------[0m
+2021-10-28T16:09:53.2912730Z      [36m# --- Caused by: ---[0m
+2021-10-28T16:09:53.2913407Z      [36m# Excon::Error::NotFound:[0m
+2021-10-28T16:09:53.2914079Z      [36m#   Expected([200, 201, 202, 203, 204, 301, 304]) <=> Actual(404 Not Found)[0m
+2021-10-28T16:09:53.2914866Z      [36m#   ./lib/excon/middlewares/hijack.rb:45:in `response_call'[0m
+2021-10-28T16:09:53.2915277Z 
+2021-10-28T16:09:53.2915685Z   2) Docker::Image#save calls the class method
+2021-10-28T16:09:53.2916554Z      [31mFailure/Error: [0mraise [1;34;4mNotFoundError[0m, ex.response.body[0m
+2021-10-28T16:09:53.2917232Z      [31m[0m
+2021-10-28T16:09:53.2917897Z      [31mDocker::Error::NotFoundError:[0m
+2021-10-28T16:09:53.2918688Z      [31m  {"message":"no such image: busybox: No such image: busybox:latest"}[0m
+2021-10-28T16:09:53.2919514Z      [36m# ./lib/docker/connection.rb:85:in `rescue in request'[0m
+2021-10-28T16:09:53.2920295Z      [36m# ./lib/docker/connection.rb:44:in `request'[0m
+2021-10-28T16:09:53.2921154Z      [36m# ./lib/docker/connection.rb:109:in `block (2 levels) in <class:Connection>'[0m
+2021-10-28T16:09:53.2921909Z      [36m# ./lib/docker/image.rb:138:in `get'[0m
+2021-10-28T16:09:53.2922691Z      [36m# ./spec/docker/image_spec.rb:330:in `block (3 levels) in <top (required)>'[0m
+2021-10-28T16:09:53.2923572Z      [36m# ./spec/docker/image_spec.rb:334:in `block (3 levels) in <top (required)>'[0m
+2021-10-28T16:09:53.2924251Z      [36m# ------------------[0m
+2021-10-28T16:09:53.2924883Z      [36m# --- Caused by: ---[0m
+2021-10-28T16:09:53.2925568Z      [36m# Excon::Error::NotFound:[0m
+2021-10-28T16:09:53.2926261Z      [36m#   Expected([200, 201, 202, 203, 204, 301, 304]) <=> Actual(404 Not Found)[0m
+2021-10-28T16:09:53.2927036Z      [36m#   ./lib/excon/middlewares/hijack.rb:45:in `response_call'[0m
+2021-10-28T16:09:53.2952442Z 
+2021-10-28T16:09:53.2953157Z Finished in 6 minutes 34 seconds (files took 0.35319 seconds to load)
+2021-10-28T16:09:53.2954229Z [31m232 examples, 2 failures, 9 pending[0m
+2021-10-28T16:09:53.2954579Z 
+2021-10-28T16:09:53.2954924Z Failed examples:
+2021-10-28T16:09:53.2955188Z 
+2021-10-28T16:09:53.2956377Z [31mrspec ./spec/docker/image_spec.rb:474[0m [36m# Docker::Image.create with a block capturing create output calls the block and passes build output[0m
+2021-10-28T16:09:53.2957754Z [31mrspec ./spec/docker/image_spec.rb:332[0m [36m# Docker::Image#save calls the class method[0m
+2021-10-28T16:09:53.2958257Z 
+2021-10-28T16:09:53.2958614Z Randomized with seed 796
+2021-10-28T16:09:53.2958892Z 
+2021-10-28T16:09:53.3011109Z /opt/hostedtoolcache/Ruby/2.5.9/x64/bin/ruby -I/opt/hostedtoolcache/Ruby/2.5.9/x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.10.1/lib:/opt/hostedtoolcache/Ruby/2.5.9/x64/lib/ruby/gems/2.5.0/gems/rspec-support-3.10.2/lib /opt/hostedtoolcache/Ruby/2.5.9/x64/lib/ruby/gems/2.5.0/gems/rspec-core-3.10.1/exe/rspec --pattern spec/\*\*/\*_spec.rb failed
+2021-10-28T16:09:53.5671164Z ##[error]Process completed with exit code 1.
+2021-10-28T16:09:53.5802598Z Post job cleanup.
+2021-10-28T16:09:53.7737013Z [command]/usr/bin/git version
+2021-10-28T16:09:53.7792394Z git version 2.33.1
+2021-10-28T16:09:53.7868922Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-10-28T16:09:53.7925582Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-10-28T16:09:53.8517351Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-10-28T16:09:53.8597646Z http.https://github.com/.extraheader
+2021-10-28T16:09:53.8599416Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-10-28T16:09:53.8655764Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-10-28T16:09:53.9402534Z Cleaning up orphan processes

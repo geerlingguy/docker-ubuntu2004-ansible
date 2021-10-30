@@ -1,0 +1,639 @@
+2021-10-28T15:59:36.8409675Z ##[group]Run bundle exec rake
+2021-10-28T15:59:36.8410601Z [36;1mbundle exec rake[0m
+2021-10-28T15:59:36.8463609Z shell: /bin/bash -e {0}
+2021-10-28T15:59:36.8464090Z ##[endgroup]
+2021-10-28T15:59:37.3947692Z Using default tag: latest
+2021-10-28T15:59:37.6473444Z latest: Pulling from swipely/base
+2021-10-28T15:59:37.6488864Z 0e4cf48b157f: Pulling fs layer
+2021-10-28T15:59:37.7352677Z 0e4cf48b157f: Download complete
+2021-10-28T15:59:37.7981964Z 0e4cf48b157f: Pull complete
+2021-10-28T15:59:37.8022958Z Digest: sha256:e68693f560d833202a817ca6d8d969019db7cb777ddd270c6a8d20e340da2a97
+2021-10-28T15:59:37.8046789Z Status: Downloaded newer image for swipely/base:latest
+2021-10-28T15:59:37.8047509Z docker.io/swipely/base:latest
+2021-10-28T15:59:37.8377478Z Using default tag: latest
+2021-10-28T15:59:38.0535820Z latest: Pulling from library/registry
+2021-10-28T15:59:38.1257285Z 6a428f9f83b0: Already exists
+2021-10-28T15:59:38.1319595Z 90cad49de35d: Pulling fs layer
+2021-10-28T15:59:38.1322048Z b215d0b40846: Pulling fs layer
+2021-10-28T15:59:38.1327205Z 429305b6c15c: Pulling fs layer
+2021-10-28T15:59:38.1330017Z 6f7e10a4e907: Pulling fs layer
+2021-10-28T15:59:38.1330707Z 6f7e10a4e907: Waiting
+2021-10-28T15:59:38.2196043Z 429305b6c15c: Verifying Checksum
+2021-10-28T15:59:38.2196903Z 429305b6c15c: Download complete
+2021-10-28T15:59:38.2425785Z 90cad49de35d: Verifying Checksum
+2021-10-28T15:59:38.2428304Z 90cad49de35d: Download complete
+2021-10-28T15:59:38.2823720Z b215d0b40846: Verifying Checksum
+2021-10-28T15:59:38.2828763Z b215d0b40846: Download complete
+2021-10-28T15:59:38.3334873Z 6f7e10a4e907: Verifying Checksum
+2021-10-28T15:59:38.3340181Z 6f7e10a4e907: Download complete
+2021-10-28T15:59:38.3688108Z 90cad49de35d: Pull complete
+2021-10-28T15:59:38.6033946Z b215d0b40846: Pull complete
+2021-10-28T15:59:38.6608470Z 429305b6c15c: Pull complete
+2021-10-28T15:59:38.7210259Z 6f7e10a4e907: Pull complete
+2021-10-28T15:59:38.7248453Z Digest: sha256:265d4a5ed8bf0df27d1107edb00b70e658ee9aa5acb3f37336c5a17db634481e
+2021-10-28T15:59:38.7268321Z Status: Downloaded newer image for registry:latest
+2021-10-28T15:59:38.7296674Z docker.io/library/registry:latest
+2021-10-28T15:59:38.7616169Z Using default tag: latest
+2021-10-28T15:59:38.9534637Z latest: Pulling from library/busybox
+2021-10-28T15:59:39.0231347Z 01c2cdc13739: Pulling fs layer
+2021-10-28T15:59:39.2098577Z 01c2cdc13739: Verifying Checksum
+2021-10-28T15:59:39.2099352Z 01c2cdc13739: Download complete
+2021-10-28T15:59:39.3058609Z 01c2cdc13739: Pull complete
+2021-10-28T15:59:39.3087350Z Digest: sha256:15e927f78df2cc772b70713543d6b651e3cd8370abf86b2ea4644a9fba21107f
+2021-10-28T15:59:39.3115391Z Status: Downloaded newer image for busybox:latest
+2021-10-28T15:59:39.3116146Z docker.io/library/busybox:latest
+2021-10-28T15:59:39.3448179Z Using default tag: latest
+2021-10-28T15:59:39.5416899Z latest: Pulling from tianon/true
+2021-10-28T15:59:39.5422083Z c53fb220cbad: Pulling fs layer
+2021-10-28T15:59:39.6374541Z c53fb220cbad: Download complete
+2021-10-28T15:59:39.6980101Z c53fb220cbad: Pull complete
+2021-10-28T15:59:39.7005614Z Digest: sha256:009cce421096698832595ce039aa13fa44327d96beedb84282a69d3dbcf5a81b
+2021-10-28T15:59:39.7027461Z Status: Downloaded newer image for tianon/true:latest
+2021-10-28T15:59:39.7032032Z docker.io/tianon/true:latest
+2021-10-28T15:59:39.9128696Z stable: Pulling from library/debian
+2021-10-28T15:59:39.9814936Z 55cb80d28193: Pulling fs layer
+2021-10-28T15:59:40.7606601Z 55cb80d28193: Verifying Checksum
+2021-10-28T15:59:40.7607789Z 55cb80d28193: Download complete
+2021-10-28T15:59:42.6179485Z 55cb80d28193: Pull complete
+2021-10-28T15:59:42.6213059Z Digest: sha256:9de81807d160cd87c476ffe90215d85478d1d2e2c1d4973b54d993a34d3986de
+2021-10-28T15:59:42.6240099Z Status: Downloaded newer image for debian:stable
+2021-10-28T15:59:42.6245277Z docker.io/library/debian:stable
+2021-10-28T15:59:44.2370578Z /opt/hostedtoolcache/Ruby/2.4.10/x64/bin/ruby -I/opt/hostedtoolcache/Ruby/2.4.10/x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.10.1/lib:/opt/hostedtoolcache/Ruby/2.4.10/x64/lib/ruby/gems/2.4.0/gems/rspec-support-3.10.2/lib /opt/hostedtoolcache/Ruby/2.4.10/x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.10.1/exe/rspec --pattern spec/\*\*/\*_spec.rb
+2021-10-28T15:59:44.7430679Z 
+2021-10-28T15:59:44.7431467Z Randomized with seed 59159
+2021-10-28T15:59:44.7431763Z 
+2021-10-28T15:59:44.7435832Z Docker::Exec
+2021-10-28T15:59:44.7440291Z   #json
+2021-10-28T15:59:45.5082808Z [32m    returns the description as a Hash[0m
+2021-10-28T15:59:45.5083428Z   #start!
+2021-10-28T15:59:45.5083858Z     when :detach is set to true
+2021-10-28T15:59:46.3724924Z [32m      returns empty stdout/stderr messages with exitcode[0m
+2021-10-28T15:59:46.3725712Z     when the exec instance does not exist
+2021-10-28T15:59:46.3756958Z [32m      raises an error[0m
+2021-10-28T15:59:46.3757534Z     when :wait set short time value
+2021-10-28T15:59:48.0725292Z [32m      raises an error[0m
+2021-10-28T15:59:48.0728515Z     when :detach is set to false
+2021-10-28T15:59:50.8582506Z [32m      returns the stdout and stderr messages[0m
+2021-10-28T15:59:50.8585351Z       block is passed
+2021-10-28T15:59:53.6994227Z [32m        attaches to the stream[0m
+2021-10-28T15:59:53.6995509Z     when the HTTP request returns a 201
+2021-10-28T15:59:54.4514188Z [32m      starts the exec instance[0m
+2021-10-28T15:59:54.4514894Z     when :wait set long time value
+2021-10-28T15:59:55.2598136Z [32m      returns empty stdout and stderr messages with exitcode[0m
+2021-10-28T15:59:55.2603671Z   .create
+2021-10-28T15:59:55.2604200Z     when the HTTP request returns a 201
+2021-10-28T15:59:55.9519071Z [32m      sets the id[0m
+2021-10-28T15:59:55.9519719Z     when the parent container does not exist
+2021-10-28T15:59:55.9533357Z [32m      raises an error[0m
+2021-10-28T15:59:55.9533842Z   #to_s
+2021-10-28T15:59:55.9534175Z     to_s
+2021-10-28T15:59:55.9576160Z [32m      is expected to == "Docker::Exec { :id => bf119e2, :connection => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T15:59:55.9578367Z 
+2021-10-28T15:59:55.9578818Z Docker::Util
+2021-10-28T15:59:55.9579235Z   .parse_json
+2021-10-28T15:59:55.9581317Z     when the argument is 'null'
+2021-10-28T15:59:55.9583352Z [32m      is expected to be nil[0m
+2021-10-28T15:59:55.9583889Z     when the argument is nil
+2021-10-28T15:59:55.9584572Z [32m      is expected to be nil[0m
+2021-10-28T15:59:55.9585131Z     when the argument is not valid JSON
+2021-10-28T15:59:55.9589419Z [32m      raises an error[0m
+2021-10-28T15:59:55.9589959Z     when the argument is empty
+2021-10-28T15:59:55.9635078Z [32m      is expected to be nil[0m
+2021-10-28T15:59:55.9635662Z     when the argument is valid JSON
+2021-10-28T15:59:55.9636433Z [32m      parses the JSON into a Hash[0m
+2021-10-28T15:59:55.9636929Z   .build_auth_header
+2021-10-28T15:59:55.9657174Z [32m    does not contain newlines[0m
+2021-10-28T15:59:55.9657771Z     given credentials as a Hash
+2021-10-28T15:59:55.9660057Z [32m      returns an X-Registry-Auth header encoded[0m
+2021-10-28T15:59:55.9660740Z     given credentials as a String
+2021-10-28T15:59:55.9663186Z [32m      returns an X-Registry-Auth header encoded[0m
+2021-10-28T15:59:55.9663818Z   .build_config_header
+2021-10-28T15:59:55.9668485Z [32m    does not contain newlines[0m
+2021-10-28T15:59:55.9669061Z     given credentials as a String
+2021-10-28T15:59:55.9672476Z [32m      returns an X-Registry-Config header encoded[0m
+2021-10-28T15:59:55.9674629Z     given credentials as a Hash
+2021-10-28T15:59:55.9675532Z [32m      returns an X-Registry-Config header encoded[0m
+2021-10-28T15:59:55.9676153Z   .create_dir_tar
+2021-10-28T15:59:55.9698353Z [32m    packs nested files, but not directory entries[0m
+2021-10-28T15:59:55.9705338Z [32m    creates a tarball[0m
+2021-10-28T15:59:55.9752389Z [32m    packs regular files[0m
+2021-10-28T15:59:55.9752953Z     .dockerignore
+2021-10-28T15:59:55.9789756Z [32m      ignores files[0m
+2021-10-28T15:59:55.9813350Z [32m      ignores directories with dir double wildcard[0m
+2021-10-28T15:59:55.9903531Z [32m      ignores directories with dir wildcard[0m
+2021-10-28T15:59:55.9915385Z [32m      ignores files[0m
+2021-10-28T15:59:55.9935301Z [32m      ignores files with dir wildcard but handles exceptions[0m
+2021-10-28T15:59:55.9956870Z [32m      ignores files with wildcard[0m
+2021-10-28T15:59:55.9977079Z [32m      passes all files when there is no .dockerignore[0m
+2021-10-28T15:59:56.0035134Z [32m      ignores comments[0m
+2021-10-28T15:59:56.0055430Z [32m      ignores directories[0m
+2021-10-28T15:59:56.0072860Z [32m      ignores files with dir wildcard[0m
+2021-10-28T15:59:56.0132320Z [32m      passes all files when there is an empty .dockerignore[0m
+2021-10-28T15:59:56.0155072Z [32m      does not interpret comments[0m
+2021-10-28T15:59:56.0202243Z [32m      ignores folders[0m
+2021-10-28T15:59:56.0217945Z [32m      ignores whitespace[0m
+2021-10-28T15:59:56.0231370Z [32m      ignores based on wildcards[0m
+2021-10-28T15:59:56.0253825Z [32m      ignores directories with dir wildcard[0m
+2021-10-28T15:59:56.0317110Z [32m      ignores multiple patterns[0m
+2021-10-28T15:59:56.0319311Z   .fix_json
+2021-10-28T15:59:56.0350557Z [32m    fixes the "JSON" response that Docker returns[0m
+2021-10-28T15:59:56.0351293Z   .filesystem_permissions
+2021-10-28T15:59:56.0352094Z [32m    returns the permissions on a file[0m
+2021-10-28T15:59:56.0352494Z 
+2021-10-28T15:59:56.0353089Z Docker::Volume
+2021-10-28T15:59:56.0353482Z   .all
+2021-10-28T15:59:57.0457806Z [32m    gets a list of volumes[0m
+2021-10-28T15:59:57.0460453Z   .prune
+2021-10-28T15:59:57.0495479Z [32m    prune volumes[0m
+2021-10-28T15:59:57.0495998Z   #remove
+2021-10-28T15:59:58.0631031Z [32m    removes a volume[0m
+2021-10-28T15:59:58.0631602Z   .create
+2021-10-28T15:59:58.0683297Z [32m    creates a volume[0m
+2021-10-28T15:59:58.0683792Z   .get
+2021-10-28T15:59:59.0765794Z [32m    gets volume details[0m
+2021-10-28T15:59:59.0766217Z 
+2021-10-28T15:59:59.0766855Z Coverage
+2021-10-28T15:59:59.0775753Z [32m  has tests for all files[0m
+2021-10-28T15:59:59.0780821Z [32m  has coverage for all tests[0m
+2021-10-28T15:59:59.0783666Z 
+2021-10-28T15:59:59.0784353Z Docker::Container
+2021-10-28T15:59:59.0787545Z   #top
+2021-10-28T16:00:10.1311209Z [32m    returns nothing when Processes were not returned due to an error[0m
+2021-10-28T16:00:20.9161339Z [32m    returns the top commands as an Array[0m
+2021-10-28T16:00:31.0916441Z [32m    returns the top commands as an Hash[0m
+2021-10-28T16:00:31.0917632Z   #unpause
+2021-10-28T16:00:31.7680585Z [32m    unpauses the container[0m
+2021-10-28T16:00:31.7683373Z   #start
+2021-10-28T16:00:32.3782913Z [32m    starts the container[0m
+2021-10-28T16:00:32.3786262Z   #archive_in_stream
+2021-10-28T16:00:32.3793026Z     when the input would overwrite a directory with a file
+2021-10-28T16:00:32.5224474Z [32m      raises an error[0m
+2021-10-28T16:00:32.5228213Z     when the input is a tar
+2021-10-28T16:00:33.7326874Z [32m      file exists in the container[0m
+2021-10-28T16:00:33.7330329Z   #commit
+2021-10-28T16:00:35.0255169Z [32m    creates a new Image from the  Container's changes[0m
+2021-10-28T16:00:35.0256654Z     if run is passed, it saves the command in the image
+2021-10-28T16:00:36.6801887Z [32m      saves the command[0m
+2021-10-28T16:00:36.6802428Z   #rename
+2021-10-28T16:00:37.5090397Z [32m    renames the container[0m
+2021-10-28T16:00:37.5091310Z   #store_file
+2021-10-28T16:00:37.5890534Z [32m    stores content in files[0m
+2021-10-28T16:00:37.5891631Z   #stats
+2021-10-28T16:00:37.5892269Z     when streaming container stats
+2021-10-28T16:00:41.2016540Z [32m      yields a Hash[0m
+2021-10-28T16:00:41.2017227Z     when requesting container stats
+2021-10-28T16:00:41.2289779Z [32m      returns a Hash[0m
+2021-10-28T16:00:41.2290373Z   #create
+2021-10-28T16:00:41.2291377Z     when creating a container named bob
+2021-10-28T16:00:41.2528149Z [32m      should have name set to bob[0m
+2021-10-28T16:00:41.2528736Z   #update
+2021-10-28T16:00:41.8298100Z [32m    updates the container[0m
+2021-10-28T16:00:41.8298900Z   #json
+2021-10-28T16:00:41.8585980Z [32m    returns the description as a Hash[0m
+2021-10-28T16:00:41.8586641Z   #restart
+2021-10-28T16:00:53.1541347Z [32m    restarts the container[0m
+2021-10-28T16:00:53.1541968Z   #attach
+2021-10-28T16:00:53.1542388Z     with very small chunks
+2021-10-28T16:00:55.8171237Z [32m      yields each chunk[0m
+2021-10-28T16:00:55.8171862Z     with normal sized chunks
+2021-10-28T16:00:58.4399408Z [32m      yields each chunk[0m
+2021-10-28T16:00:58.4400508Z   .prune
+2021-10-28T16:00:58.4417309Z [32m    prune containers[0m
+2021-10-28T16:00:58.4418224Z   #export
+2021-10-28T16:00:59.1072933Z [32m    yields each chunk[0m
+2021-10-28T16:00:59.1073464Z   #run
+2021-10-28T16:00:59.1074199Z     when the Container's command returns a status code of 0
+2021-10-28T16:01:00.8856493Z [32m      creates a new container to run the specified command[0m
+2021-10-28T16:01:00.8870468Z     when the Container's command does not return status code of 0
+2021-10-28T16:01:01.4698621Z [32m      raises an error[0m
+2021-10-28T16:01:01.4703221Z   #exec
+2021-10-28T16:01:01.4706410Z     when tty is true
+2021-10-28T16:01:02.3186830Z [32m      returns the raw stdout/stderr output[0m
+2021-10-28T16:01:02.3188338Z     when detach is true
+2021-10-28T16:01:03.0889513Z [32m      returns the Docker::Exec object[0m
+2021-10-28T16:01:03.0890828Z     when passed a block
+2021-10-28T16:01:05.8722992Z [32m      streams the stdout/stderr messages[0m
+2021-10-28T16:01:05.8723750Z     when passed only a command
+2021-10-28T16:01:08.7054026Z [32m      returns the stdout/stderr messages and exit code[0m
+2021-10-28T16:01:08.7054786Z     when stdin object is passed
+2021-10-28T16:01:09.5730783Z [32m      returns the stdout/stderr messages[0m
+2021-10-28T16:01:09.5731421Z   #pause
+2021-10-28T16:01:10.2953999Z [32m    pauses the container[0m
+2021-10-28T16:01:10.2954618Z   #streaming_logs
+2021-10-28T16:01:10.2955055Z     when using a tty
+2021-10-28T16:01:10.9494969Z [32m      returns `hello`[0m
+2021-10-28T16:01:10.9495597Z     when selecting stdout
+2021-10-28T16:01:11.6044804Z [32m      returns blank logs[0m
+2021-10-28T16:01:11.6045411Z     when passing a block
+2021-10-28T16:01:12.2425308Z [32m      returns `hello`[0m
+2021-10-28T16:01:12.2425968Z     when not selecting any stream
+2021-10-28T16:01:12.8388229Z [32m      raises a client error[0m
+2021-10-28T16:01:12.8388872Z   #archive_in
+2021-10-28T16:01:12.8389315Z     when the input is a tar
+2021-10-28T16:01:14.0205469Z [32m      file exists in the container[0m
+2021-10-28T16:01:14.0206061Z   .get
+2021-10-28T16:01:14.0206524Z     when the HTTP response is not a 200
+2021-10-28T16:01:14.0219000Z [32m      raises an error[0m
+2021-10-28T16:01:14.0219586Z     when the HTTP response is a 200
+2021-10-28T16:01:14.0464430Z [32m      materializes the Container into a Docker::Container[0m
+2021-10-28T16:01:14.0465116Z   #logs
+2021-10-28T16:01:14.0465546Z     when selecting stdout
+2021-10-28T16:01:14.0724233Z [32m      returns blank logs[0m
+2021-10-28T16:01:14.0724873Z     when not selecting any stream
+2021-10-28T16:01:14.1097612Z [32m      raises a client error[0m
+2021-10-28T16:01:14.1098180Z   #read_file
+2021-10-28T16:01:14.9098116Z [32m    reads contents from files[0m
+2021-10-28T16:01:14.9098828Z   #delete
+2021-10-28T16:01:14.9324615Z [32m    deletes the container[0m
+2021-10-28T16:01:14.9325232Z   #stop
+2021-10-28T16:01:15.5336277Z [32m    stops the container[0m
+2021-10-28T16:01:15.5338237Z     with a timeout
+2021-10-28T16:01:16.4455575Z [32m      extends the Excon timeout ensuring the request does not timeout before Docker[0m
+2021-10-28T16:01:16.4457065Z     without a timeout
+2021-10-28T16:01:17.4791754Z [32m      does not adjust the default Excon HTTP timeout[0m
+2021-10-28T16:01:17.4792451Z   .create
+2021-10-28T16:01:17.4793074Z     when the Container does not yet exist
+2021-10-28T16:01:17.4794279Z       when the HTTP request returns a 200
+2021-10-28T16:01:17.5114530Z [32m        sets the id[0m
+2021-10-28T16:01:17.5115402Z       when the HTTP request does not return a 200
+2021-10-28T16:01:17.5122921Z [32m        raises an error[0m
+2021-10-28T16:01:17.5123409Z   #to_s
+2021-10-28T16:01:17.5124271Z     to_s
+2021-10-28T16:01:17.5128251Z [32m      is expected to == "Docker::Container { :id => bf119e2, :connection => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:01:17.5129196Z   #kill
+2021-10-28T16:01:18.2329965Z [32m    kills the container[0m
+2021-10-28T16:01:18.2333040Z     with a kill signal
+2021-10-28T16:01:19.0805945Z [32m      kills the container[0m
+2021-10-28T16:01:19.0809342Z   .all
+2021-10-28T16:01:19.0812134Z     when the HTTP response is not a 200
+2021-10-28T16:01:19.0828919Z [32m      raises an error[0m
+2021-10-28T16:01:19.0833139Z     when the HTTP response is a 200
+2021-10-28T16:01:19.1176471Z [32m      materializes each Container into a Docker::Container[0m
+2021-10-28T16:01:19.1180093Z   #changes
+2021-10-28T16:01:20.2354253Z [32m    returns the changes as an array[0m
+2021-10-28T16:01:20.2357686Z   #archive_out
+2021-10-28T16:01:20.2360547Z     when the input is a file
+2021-10-28T16:01:21.0030221Z [32m      yields each chunk of the tarred file[0m
+2021-10-28T16:01:21.0033574Z     when the file does not exist
+2021-10-28T16:01:21.6706380Z [32m      raises an error[0m
+2021-10-28T16:01:21.6709916Z     when the input is a directory
+2021-10-28T16:01:22.4408855Z [32m      yields each chunk of the tarred directory[0m
+2021-10-28T16:01:22.4413456Z   #attach with stdin
+2021-10-28T16:01:23.1305851Z [32m    yields the output[0m
+2021-10-28T16:01:23.1307747Z   #wait
+2021-10-28T16:01:23.7535021Z [32m    waits for the command to finish[0m
+2021-10-28T16:01:23.7535675Z     when an argument is given
+2021-10-28T16:01:29.4018654Z [32m      sets the :read_timeout to that amount of time[0m
+2021-10-28T16:01:29.4020526Z       and a command runs for too long
+2021-10-28T16:01:35.0335719Z [32m        raises a ServerError[0m
+2021-10-28T16:01:35.0336428Z 
+2021-10-28T16:01:35.0336792Z Docker
+2021-10-28T16:01:35.0340599Z [32m  is expected to be a kind of Module[0m
+2021-10-28T16:01:35.0341084Z   #ping
+2021-10-28T16:01:35.0360787Z [32m    returns the status as a String[0m
+2021-10-28T16:01:35.0361377Z   #authenticate!
+2021-10-28T16:01:35.0361880Z     with valid credentials
+2021-10-28T16:01:35.0369446Z [33m      logs in and sets the creds (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:01:35.0370178Z     with invalid credentials
+2021-10-28T16:01:35.1525919Z [32m      raises an error and doesn't set the creds[0m
+2021-10-28T16:01:35.1526575Z   #reset_connection!
+2021-10-28T16:01:35.1530965Z [32m    sets the @connection to nil[0m
+2021-10-28T16:01:35.1531449Z   #version
+2021-10-28T16:01:35.1551955Z [32m    returns the version as a Hash[0m
+2021-10-28T16:01:35.1552483Z   #url=
+2021-10-28T16:01:35.1555759Z [32m    calls #reset_connection![0m
+2021-10-28T16:01:35.1556232Z   #info
+2021-10-28T16:01:35.1721502Z [32m    returns the info as a Hash[0m
+2021-10-28T16:01:35.1722142Z   default url and connection
+2021-10-28T16:01:35.1722786Z     when the DOCKER_HOST is set and uses default tcp://
+2021-10-28T16:01:35.1723315Z       url
+2021-10-28T16:01:35.1730236Z [32m        is expected to == "tcp://localhost:2375"[0m
+2021-10-28T16:01:35.1730821Z       options
+2021-10-28T16:01:35.1735514Z [32m        is expected to == {}[0m
+2021-10-28T16:01:35.1735989Z       connection
+2021-10-28T16:01:35.1742774Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1743597Z     when the DOCKER_CERT_PATH and DOCKER_SSL_VERIFY ENV variables are set
+2021-10-28T16:01:35.1744203Z       options
+2021-10-28T16:01:35.1751977Z [32m        is expected to == {:client_cert=>"/boot2dockert/cert/path/cert.pem", :client_key=>"/boot2dockert/cert/path/key.pem", :scheme=>"https", :ssl_ca_file=>"/boot2dockert/cert/path/ca.pem", :ssl_verify_peer=>false}[0m
+2021-10-28T16:01:35.1753159Z       connection
+2021-10-28T16:01:35.1758802Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1759677Z       url
+2021-10-28T16:01:35.1764609Z [32m        is expected to == "tcp://someserver:8103"[0m
+2021-10-28T16:01:35.1765493Z     when the DOCKER_* ENV variables aren't set
+2021-10-28T16:01:35.1766013Z       options
+2021-10-28T16:01:35.1770360Z [32m        is expected to == {}[0m
+2021-10-28T16:01:35.1770846Z       connection
+2021-10-28T16:01:35.1777312Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1777892Z       url
+2021-10-28T16:01:35.1789563Z [32m        is expected to == "unix:///var/run/docker.sock"[0m
+2021-10-28T16:01:35.1831865Z     when the DOCKER_HOST ENV variable is set
+2021-10-28T16:01:35.1832441Z       connection
+2021-10-28T16:01:35.1840686Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1841275Z       url
+2021-10-28T16:01:35.1845926Z [32m        is expected to == "tcp://someserver:8103"[0m
+2021-10-28T16:01:35.1846528Z       options
+2021-10-28T16:01:35.1851534Z [32m        is expected to == {}[0m
+2021-10-28T16:01:35.1852218Z     when the DOCKER_CERT_PATH and DOCKER_HOST ENV variables are set
+2021-10-28T16:01:35.1852814Z       options
+2021-10-28T16:01:35.1860368Z [32m        is expected to == {:client_cert=>"/boot2dockert/cert/path/cert.pem", :client_key=>"/boot2dockert/cert/path/key.pem", :scheme=>"https", :ssl_ca_file=>"/boot2dockert/cert/path/ca.pem"}[0m
+2021-10-28T16:01:35.1861449Z       connection
+2021-10-28T16:01:35.1867020Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1867575Z       url
+2021-10-28T16:01:35.1873275Z [32m        is expected to == "tcp://someserver:8103"[0m
+2021-10-28T16:01:35.1874003Z     when the DOCKER_* ENV variables are set
+2021-10-28T16:01:35.1874496Z       options
+2021-10-28T16:01:35.1879282Z [32m        is expected to == {}[0m
+2021-10-28T16:01:35.1879752Z       connection
+2021-10-28T16:01:35.1893395Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1905686Z       url
+2021-10-28T16:01:35.1914125Z [32m        is expected to == "unixs:///var/run/not-docker.sock"[0m
+2021-10-28T16:01:35.1914963Z     DOCKER_URL should take precedence over DOCKER_HOST
+2021-10-28T16:01:35.1915499Z       url
+2021-10-28T16:01:35.1920602Z [32m        is expected to == "tcp://someotherserver:8103"[0m
+2021-10-28T16:01:35.1921264Z       options
+2021-10-28T16:01:35.1924208Z [32m        is expected to == {}[0m
+2021-10-28T16:01:35.1950163Z       connection
+2021-10-28T16:01:35.1959390Z [32m        is expected to be a kind of Docker::Connection[0m
+2021-10-28T16:01:35.1960047Z   #options=
+2021-10-28T16:01:35.1963496Z [32m    calls #reset_connection![0m
+2021-10-28T16:01:35.1964967Z 
+2021-10-28T16:01:35.1989627Z Docker::Connection
+2021-10-28T16:01:35.1991464Z   #to_s
+2021-10-28T16:01:35.1996959Z [32m    returns a pretty version with the url and port[0m
+2021-10-28T16:01:35.1997560Z   #request
+2021-10-28T16:01:35.2006312Z [32m    sends #request to #resource with the compiled params[0m
+2021-10-28T16:01:35.2006947Z   #resource
+2021-10-28T16:01:35.2007361Z     resource
+2021-10-28T16:01:35.2012551Z [32m      is expected to be a kind of Excon::Connection[0m
+2021-10-28T16:01:35.2013161Z   #delete
+2021-10-28T16:01:35.2028944Z [32m    is delegated to #request[0m
+2021-10-28T16:01:35.2029486Z   #post
+2021-10-28T16:01:35.2075999Z [32m    is delegated to #request[0m
+2021-10-28T16:01:35.2076524Z   #initialize
+2021-10-28T16:01:35.2076958Z     url conversion to uri
+2021-10-28T16:01:35.2077440Z       when the url is a complete uri
+2021-10-28T16:01:35.2079838Z [32m        leaves the url intact[0m
+2021-10-28T16:01:35.2080361Z       when the url does not contain a scheme
+2021-10-28T16:01:35.2083467Z [32m        adds the scheme to the url[0m
+2021-10-28T16:01:35.2084021Z     when the first argument is not a String
+2021-10-28T16:01:35.2088685Z [32m      raises an error[0m
+2021-10-28T16:01:35.2089229Z     when the first argument is a String
+2021-10-28T16:01:35.2089785Z       and the url is a unix socket
+2021-10-28T16:01:35.2103828Z [32m        sets the socket path in the options[0m
+2021-10-28T16:01:35.2104796Z       and the second argument is a Hash
+2021-10-28T16:01:35.2105550Z [32m        sets the url and options[0m
+2021-10-28T16:01:35.2106103Z       but the second argument is not a Hash
+2021-10-28T16:01:35.2109183Z [32m        raises an error[0m
+2021-10-28T16:01:35.2110524Z   #put
+2021-10-28T16:01:35.2111146Z [32m    is delegated to #request[0m
+2021-10-28T16:01:35.2111603Z   #get
+2021-10-28T16:01:35.2112208Z [32m    is delegated to #request[0m
+2021-10-28T16:01:35.2112560Z 
+2021-10-28T16:01:35.2113032Z Docker::Event
+2021-10-28T16:01:35.2113433Z   .stream
+2021-10-28T16:01:35.4095449Z Docker::Event { 1635436895408764923 image pull debian:stable (name=debian) }
+2021-10-28T16:01:35.4357187Z Docker::Event { 1635436895429261086 container create 5c44cf92feb9af22a057c1646b0feadae6173eeea7f658ddd0956947952c0ef4 (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=recursing_keller) }
+2021-10-28T16:01:35.4489387Z Docker::Event { 1635436895448131672 network connect 0f0ba42fff0f051671c9fec25bf9c734f1f438b33ac8900dbe4ec2e57b308e29 (container=5c44cf92feb9af22a057c1646b0feadae6173eeea7f658ddd0956947952c0ef4, name=bridge, type=bridge) }
+2021-10-28T16:01:35.8180064Z Docker::Event { 1635436895817213105 container start 5c44cf92feb9af22a057c1646b0feadae6173eeea7f658ddd0956947952c0ef4 (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=recursing_keller) }
+2021-10-28T16:01:36.0502374Z [32m    receives at least 4 events[0m
+2021-10-28T16:01:36.0505636Z   .new_event
+2021-10-28T16:01:36.0510205Z     with a new api response
+2021-10-28T16:01:36.0518672Z [32m      returns a Docker::Event[0m
+2021-10-28T16:01:36.0521800Z     with an old api response
+2021-10-28T16:01:36.0528367Z [32m      returns a Docker::Event[0m
+2021-10-28T16:01:36.0530987Z   .since
+2021-10-28T16:01:36.2855167Z Docker::Event { 1635436896283518596 image pull debian:stable (name=debian) }
+2021-10-28T16:01:36.3077975Z Docker::Event { 1635436896307044401 container create bddcbbf465d9ee21dc78c577c3458d423b8243170466bc5557d60ee40f66f067 (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=nervous_borg) }
+2021-10-28T16:01:36.3233958Z Docker::Event { 1635436896322355019 network connect 0f0ba42fff0f051671c9fec25bf9c734f1f438b33ac8900dbe4ec2e57b308e29 (container=bddcbbf465d9ee21dc78c577c3458d423b8243170466bc5557d60ee40f66f067, name=bridge, type=bridge) }
+2021-10-28T16:01:36.7350113Z Docker::Event { 1635436896732531372 container start bddcbbf465d9ee21dc78c577c3458d423b8243170466bc5557d60ee40f66f067 (image=sha256:5ef9fdf9b7e2c2341463a3c80366fe01c7c9e4c5942ecf612aeb0b5cb318c03a, name=nervous_borg) }
+2021-10-28T16:01:36.9185146Z [32m    receives at least 4 events[0m
+2021-10-28T16:01:36.9190216Z   #to_s
+2021-10-28T16:01:36.9194145Z     with an old event
+2021-10-28T16:01:36.9204361Z [32m      equals the expected string[0m
+2021-10-28T16:01:36.9231050Z     with a new event
+2021-10-28T16:01:36.9238426Z [32m      equals the expected string[0m
+2021-10-28T16:01:36.9242824Z 
+2021-10-28T16:01:36.9262648Z Docker::Messages
+2021-10-28T16:01:36.9270221Z   .decipher_messages
+2021-10-28T16:01:36.9311248Z     given both standard out and standard error
+2021-10-28T16:01:36.9315141Z       behaves like decipher_messages of raw_test
+2021-10-28T16:01:36.9318801Z         behaves like two equal messages
+2021-10-28T16:01:36.9326146Z [32m          has the same messages as we expect[0m
+2021-10-28T16:01:36.9330298Z     given two headers
+2021-10-28T16:01:36.9334214Z       behaves like decipher_messages of raw_test
+2021-10-28T16:01:36.9337109Z         behaves like two equal messages
+2021-10-28T16:01:36.9344111Z [32m          has the same messages as we expect[0m
+2021-10-28T16:01:36.9349431Z     given a single header
+2021-10-28T16:01:36.9352795Z       behaves like decipher_messages of raw_test
+2021-10-28T16:01:36.9355916Z         behaves like two equal messages
+2021-10-28T16:01:36.9362848Z [32m          has the same messages as we expect[0m
+2021-10-28T16:01:36.9367222Z     given a header for text longer then 255 characters
+2021-10-28T16:01:36.9370307Z       behaves like decipher_messages of raw_test
+2021-10-28T16:01:36.9373264Z         behaves like two equal messages
+2021-10-28T16:01:36.9380027Z [32m          has the same messages as we expect[0m
+2021-10-28T16:01:36.9384433Z   #append
+2021-10-28T16:01:36.9387602Z     appending one set of messages on another
+2021-10-28T16:01:36.9430527Z       with a buffer
+2021-10-28T16:01:36.9433516Z         behaves like two equal messages
+2021-10-28T16:01:36.9440562Z [32m          has the same messages as we expect[0m
+2021-10-28T16:01:36.9444416Z       without a buffer
+2021-10-28T16:01:36.9447647Z         behaves like two equal messages
+2021-10-28T16:01:36.9454268Z [32m          has the same messages as we expect[0m
+2021-10-28T16:01:36.9458111Z 
+2021-10-28T16:01:36.9461049Z Docker::Network
+2021-10-28T16:01:36.9465658Z   .remove
+2021-10-28T16:01:37.0927519Z [32m    removes the Network[0m
+2021-10-28T16:01:37.0930643Z   .all
+2021-10-28T16:01:37.8760177Z [32m    should return all networks[0m
+2021-10-28T16:01:37.8763443Z   .create
+2021-10-28T16:01:38.0157315Z [32m    creates a Network[0m
+2021-10-28T16:01:38.0160581Z   .get
+2021-10-28T16:01:38.1736874Z [32m    returns a network[0m
+2021-10-28T16:01:38.1740476Z   #disconnect
+2021-10-28T16:01:40.2799340Z [32m    connects a container to a network[0m
+2021-10-28T16:01:40.2799967Z   #connect
+2021-10-28T16:01:41.3740301Z [32m    connects a container to a network[0m
+2021-10-28T16:01:41.3740922Z   .prune
+2021-10-28T16:01:41.3760265Z [32m    prune networks[0m
+2021-10-28T16:01:41.3760820Z   #remove
+2021-10-28T16:01:41.5361356Z [32m    removes the Network[0m
+2021-10-28T16:01:41.5364261Z   #to_s
+2021-10-28T16:01:41.5364915Z     to_s
+2021-10-28T16:01:41.5370943Z [32m      is expected to == "Docker::Network { :id => a6c5ffd25e07a6c906accf804174b5eb6a9d2f9e07bccb8f5aa4f4de5be6d01d, :info => ...ction => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:01:41.5374643Z 
+2021-10-28T16:01:41.5375040Z Docker::Image
+2021-10-28T16:01:41.5375428Z   #run
+2021-10-28T16:01:41.5375813Z     when cmd is an Array
+2021-10-28T16:01:42.3205106Z [32m      creates a new Container[0m
+2021-10-28T16:01:42.3205686Z     when cmd is nil
+2021-10-28T16:01:42.3206197Z       no command configured in image
+2021-10-28T16:01:42.5391652Z [32m        should raise an error if no command is specified[0m
+2021-10-28T16:01:42.5392510Z     command configured in image
+2021-10-28T16:01:43.3549130Z [32m      should normally show result if image has Cmd configured[0m
+2021-10-28T16:01:43.3549923Z     when using cpu shares
+2021-10-28T16:01:44.1574376Z [32m      returns 50[0m
+2021-10-28T16:01:44.1575634Z     when cmd is a String
+2021-10-28T16:01:45.0292635Z [32m      splits the String by spaces and creates a new Container[0m
+2021-10-28T16:01:45.0293326Z   .create
+2021-10-28T16:01:45.0293755Z     image with tag
+2021-10-28T16:01:45.2536752Z [32m      supports identical fromImage and tag[0m
+2021-10-28T16:01:45.4816904Z [32m      pulls the image (symbol arguments)[0m
+2021-10-28T16:01:45.7134774Z [32m      pulls the image (string arguments)[0m
+2021-10-28T16:01:45.7135496Z     with a block capturing create output
+2021-10-28T16:03:17.1201101Z [32m      calls the block and passes build output[0m
+2021-10-28T16:03:17.1202458Z     when the Image does not yet exist and the body is a Hash
+2021-10-28T16:03:17.3298554Z [33m      sets the id and sends Docker.creds (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:03:17.3299817Z   .build
+2021-10-28T16:03:17.3300428Z     with an invalid Dockerfile
+2021-10-28T16:03:17.3935779Z [32m      throws a ClientError[0m
+2021-10-28T16:03:17.4493259Z [32m      throws a UnexpectedResponseError[0m
+2021-10-28T16:03:17.4494735Z     with a valid Dockerfile
+2021-10-28T16:03:17.4495546Z       without query parameters
+2021-10-28T16:03:17.5078131Z [32m        builds an image[0m
+2021-10-28T16:03:17.5083223Z       with specifying a repo in the query parameters
+2021-10-28T16:03:19.0642937Z [32m        builds an image and tags it[0m
+2021-10-28T16:03:19.0643763Z       with a block capturing build output
+2021-10-28T16:03:19.1767187Z [32m        calls the block and passes build output[0m
+2021-10-28T16:03:19.1767848Z   #save
+2021-10-28T16:03:19.1797611Z [32m    calls the class method[0m
+2021-10-28T16:03:19.1798146Z   .load
+2021-10-28T16:03:19.1799329Z     when the argument is an IO
+2021-10-28T16:03:19.4253412Z [32m      loads tinan/true image from the IO[0m
+2021-10-28T16:03:19.4257003Z     when the argument is a String
+2021-10-28T16:03:19.5044492Z [32m      loads tianon/true image from the file system[0m
+2021-10-28T16:03:19.5048016Z   .build_from_dir
+2021-10-28T16:03:19.5050730Z     with a valid Dockerfile
+2021-10-28T16:03:19.5053524Z       with credentials passed
+2021-10-28T16:03:20.7040855Z [32m        sends X-Registry-Config header[0m
+2021-10-28T16:03:20.7044260Z       with specifying a repo in the query parameters
+2021-10-28T16:03:22.0596862Z [32m        builds the image and tags it[0m
+2021-10-28T16:03:22.0598205Z       with no query parameters
+2021-10-28T16:03:23.7374864Z [32m        builds the image[0m
+2021-10-28T16:03:23.7375554Z       with a block capturing build output
+2021-10-28T16:03:25.1467542Z [32m        calls the block and passes build output[0m
+2021-10-28T16:03:25.1472576Z         uses a cached version the second time
+2021-10-28T16:03:26.8579583Z [32m          calls the block and passes build output[0m
+2021-10-28T16:03:26.8583688Z   .prune
+2021-10-28T16:03:26.8816220Z [32m    prune images[0m
+2021-10-28T16:03:26.8820019Z   .save
+2021-10-28T16:03:26.8822819Z     when a filename is specified
+2021-10-28T16:03:26.8862129Z [32m      exports tarball of image to specified file[0m
+2021-10-28T16:03:26.8910202Z     when no filename is specified
+2021-10-28T16:03:26.8944335Z [32m      returns raw binary data as string[0m
+2021-10-28T16:03:26.8948738Z   #history
+2021-10-28T16:03:27.1336024Z [32m    returns the history of the Image[0m
+2021-10-28T16:03:27.1339256Z   #to_s
+2021-10-28T16:03:27.1341905Z     to_s
+2021-10-28T16:03:27.1351045Z [32m      is expected to == "Docker::Image { :id => bf119e2, :info => {\"id\"=>\"bf119e2\", \"Repository\"=>\"debian\", \"Tag\"=>...ction => Docker::Connection { :url => unix:///, :options => {:socket=>\"/var/run/docker.sock\"} } }"[0m
+2021-10-28T16:03:27.1390252Z   #remove
+2021-10-28T16:03:27.1393249Z     when no name is given
+2021-10-28T16:03:28.0305032Z [32m      removes the Image[0m
+2021-10-28T16:03:28.0308937Z     when an invalid tag is given
+2021-10-28T16:03:28.0313492Z [33m      raises an error (PENDING: Not yet implemented)[0m
+2021-10-28T16:03:28.0316172Z     when using the class
+2021-10-28T16:03:28.8313249Z [32m      removes the Image[0m
+2021-10-28T16:03:28.8314142Z     when a valid tag is given
+2021-10-28T16:03:28.8316447Z [33m      untags the Image (PENDING: Not yet implemented)[0m
+2021-10-28T16:03:28.8317257Z   #save_stream
+2021-10-28T16:03:28.8343537Z [32m    calls the class method[0m
+2021-10-28T16:03:28.8344267Z   .search
+2021-10-28T16:03:28.9153677Z [32m    materializes each Image into a Docker::Image[0m
+2021-10-28T16:03:28.9154388Z   .get
+2021-10-28T16:03:28.9154844Z     when the image does not exist
+2021-10-28T16:03:28.9168793Z [32m      raises a not found error[0m
+2021-10-28T16:03:28.9190487Z     when the image does exist
+2021-10-28T16:03:28.9212755Z [32m      returns the new image[0m
+2021-10-28T16:03:28.9213256Z   #refresh!
+2021-10-28T16:03:29.1698606Z [32m    updates the @info hash[0m
+2021-10-28T16:03:29.1699263Z     with an explicit connection
+2021-10-28T16:03:29.4661304Z [32m      updates using the provided connection[0m
+2021-10-28T16:03:29.4661900Z   #tag
+2021-10-28T16:03:29.6988253Z [32m    tags the image with the repo name[0m
+2021-10-28T16:03:29.6988889Z   #insert_local
+2021-10-28T16:03:29.6989457Z     when removing intermediate containers
+2021-10-28T16:03:31.0521174Z [32m      creates a new image[0m
+2021-10-28T16:03:32.0231633Z [32m      leave no intermediate containers[0m
+2021-10-28T16:03:32.0232408Z     when a directory is passed
+2021-10-28T16:03:33.6415440Z [32m      inserts the directory[0m
+2021-10-28T16:03:33.6416773Z     when the local file does exist
+2021-10-28T16:03:35.6356673Z [32m      creates a new Image that has that file[0m
+2021-10-28T16:03:35.6357493Z     when there are multiple files passed
+2021-10-28T16:03:38.6948287Z [32m      creates a new Image that has each file[0m
+2021-10-28T16:03:38.6949076Z     when the local file does not exist
+2021-10-28T16:03:38.9286494Z [32m      raises an error[0m
+2021-10-28T16:03:38.9287594Z   .all
+2021-10-28T16:03:39.1671839Z [32m    materializes each Image into a Docker::Image[0m
+2021-10-28T16:03:39.1673030Z   #json
+2021-10-28T16:03:39.1674223Z [33m    returns additional information about image image (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:03:39.1675149Z   #push
+2021-10-28T16:03:39.2816723Z [33m    streams output from push (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:03:39.4809121Z [33m    pushes the Image (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:03:39.4810564Z     when there are no credentials
+2021-10-28T16:03:39.7705584Z [32m      still pushes[0m
+2021-10-28T16:03:39.7706169Z     when a tag is specified
+2021-10-28T16:03:39.7707323Z [33m      pushes that specific tag (PENDING: Not yet implemented)[0m
+2021-10-28T16:03:39.7708030Z     when the image was retrived by get
+2021-10-28T16:03:39.7708594Z       when no tag is specified
+2021-10-28T16:03:39.8787793Z [33m        looks up the first repo tag (PENDING: Disabled because of missing auth)[0m
+2021-10-28T16:03:39.8793034Z   .exist?
+2021-10-28T16:03:39.8796374Z     when the image does exist
+2021-10-28T16:03:39.8821123Z [32m      returns true[0m
+2021-10-28T16:03:39.8824968Z     when the image does not exist
+2021-10-28T16:03:39.8840973Z [32m      return false[0m
+2021-10-28T16:03:39.8846108Z   .import
+2021-10-28T16:03:39.8850153Z     when the argument is a URI
+2021-10-28T16:03:39.8854291Z       when the URI is valid
+2021-10-28T16:03:40.1286065Z [32m        returns an Image[0m
+2021-10-28T16:03:40.1287340Z       when the URI is invalid
+2021-10-28T16:03:40.3276500Z [32m        raises an error[0m
+2021-10-28T16:03:40.3282661Z     when the file does exist
+2021-10-28T16:03:40.4152842Z [32m      creates the Image[0m
+2021-10-28T16:03:40.4155798Z     when the file does not exist
+2021-10-28T16:03:40.4188469Z [32m      raises an error[0m
+2021-10-28T16:03:40.4191607Z   .save_stream
+2021-10-28T16:03:40.5016918Z [32m    yields each chunk of the image[0m
+2021-10-28T16:03:40.5024340Z 
+2021-10-28T16:03:40.5025787Z Pending: (Failures listed here are expected and do not affect your suite's status)
+2021-10-28T16:03:40.5026594Z [33m
+2021-10-28T16:03:40.5027744Z   1) Docker#authenticate! with valid credentials logs in and sets the creds[0m
+2021-10-28T16:03:40.5028686Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:03:40.5029446Z [36m     # ./spec/docker_spec.rb:216
+2021-10-28T16:03:40.5030008Z [0m[33m
+2021-10-28T16:03:40.5031239Z   2) Docker::Image.create when the Image does not yet exist and the body is a Hash sets the id and sends Docker.creds[0m
+2021-10-28T16:03:40.5032288Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:03:40.5033048Z [36m     # ./spec/docker/image_spec.rb:413
+2021-10-28T16:03:40.5035739Z [0m[33m
+2021-10-28T16:03:40.5036687Z   3) Docker::Image#remove when an invalid tag is given raises an error[0m
+2021-10-28T16:03:40.5037520Z      [36m# Not yet implemented[0m
+2021-10-28T16:03:40.5038220Z [36m     # ./spec/docker/image_spec.rb:53
+2021-10-28T16:03:40.5038791Z [0m[33m
+2021-10-28T16:03:40.5039681Z   4) Docker::Image#remove when a valid tag is given untags the Image[0m
+2021-10-28T16:03:40.5040485Z      [36m# Not yet implemented[0m
+2021-10-28T16:03:40.5041200Z [36m     # ./spec/docker/image_spec.rb:49
+2021-10-28T16:03:40.5041773Z [0m[33m
+2021-10-28T16:03:40.5042727Z   5) Docker::Image#json returns additional information about image image[0m
+2021-10-28T16:03:40.5044015Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:03:40.5044779Z [36m     # ./spec/docker/image_spec.rb:246
+2021-10-28T16:03:40.5045359Z [0m[33m
+2021-10-28T16:03:40.5046161Z   6) Docker::Image#push streams output from push[0m
+2021-10-28T16:03:40.5046972Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:03:40.5047704Z [36m     # ./spec/docker/image_spec.rb:188
+2021-10-28T16:03:40.5048289Z [0m[33m
+2021-10-28T16:03:40.5049048Z   7) Docker::Image#push pushes the Image[0m
+2021-10-28T16:03:40.5049831Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:03:40.5050653Z [36m     # ./spec/docker/image_spec.rb:183
+2021-10-28T16:03:40.5051216Z [0m[33m
+2021-10-28T16:03:40.5052145Z   8) Docker::Image#push when a tag is specified pushes that specific tag[0m
+2021-10-28T16:03:40.5053035Z      [36m# Not yet implemented[0m
+2021-10-28T16:03:40.5053761Z [36m     # ./spec/docker/image_spec.rb:195
+2021-10-28T16:03:40.5054341Z [0m[33m
+2021-10-28T16:03:40.5055431Z   9) Docker::Image#push when the image was retrived by get when no tag is specified looks up the first repo tag[0m
+2021-10-28T16:03:40.5056455Z      [36m# Disabled because of missing auth[0m
+2021-10-28T16:03:40.5057189Z [36m     # ./spec/docker/image_spec.rb:205
+2021-10-28T16:03:40.5057756Z [0m
+2021-10-28T16:03:40.5057994Z 
+2021-10-28T16:03:40.5058545Z Finished in 3 minutes 55.8 seconds (files took 0.28394 seconds to load)
+2021-10-28T16:03:40.5059419Z [33m232 examples, 0 failures, 9 pending[0m
+2021-10-28T16:03:40.5059817Z 
+2021-10-28T16:03:40.5060214Z Randomized with seed 59159
+2021-10-28T16:03:40.5060547Z 

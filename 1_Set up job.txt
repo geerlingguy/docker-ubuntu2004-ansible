@@ -1,0 +1,35 @@
+2021-10-28T15:58:44.0395313Z Current runner version: '2.283.3'
+2021-10-28T15:58:44.0424759Z ##[group]Operating System
+2021-10-28T15:58:44.0425828Z Ubuntu
+2021-10-28T15:58:44.0426391Z 18.04.6
+2021-10-28T15:58:44.0427162Z LTS
+2021-10-28T15:58:44.0427686Z ##[endgroup]
+2021-10-28T15:58:44.0428378Z ##[group]Virtual Environment
+2021-10-28T15:58:44.0429129Z Environment: ubuntu-18.04
+2021-10-28T15:58:44.0429800Z Version: 20211017.0
+2021-10-28T15:58:44.0430924Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20211017.0/images/linux/Ubuntu1804-README.md
+2021-10-28T15:58:44.0432516Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu18%2F20211017.0
+2021-10-28T15:58:44.0433570Z ##[endgroup]
+2021-10-28T15:58:44.0434284Z ##[group]Virtual Environment Provisioner
+2021-10-28T15:58:44.0435085Z 1.0.0.0-master-20211022-1
+2021-10-28T15:58:44.0435679Z ##[endgroup]
+2021-10-28T15:58:44.0437993Z ##[group]GITHUB_TOKEN Permissions
+2021-10-28T15:58:44.0439409Z Actions: write
+2021-10-28T15:58:44.0440211Z Checks: write
+2021-10-28T15:58:44.0440786Z Contents: write
+2021-10-28T15:58:44.0441466Z Deployments: write
+2021-10-28T15:58:44.0442088Z Discussions: write
+2021-10-28T15:58:44.0442743Z Issues: write
+2021-10-28T15:58:44.0443294Z Metadata: read
+2021-10-28T15:58:44.0443917Z Packages: write
+2021-10-28T15:58:44.0444493Z Pages: write
+2021-10-28T15:58:44.0445133Z PullRequests: write
+2021-10-28T15:58:44.0445908Z RepositoryProjects: write
+2021-10-28T15:58:44.0446619Z SecurityEvents: write
+2021-10-28T15:58:44.0447315Z Statuses: write
+2021-10-28T15:58:44.0447980Z ##[endgroup]
+2021-10-28T15:58:44.0451356Z Prepare workflow directory
+2021-10-28T15:58:44.1114321Z Prepare all required actions
+2021-10-28T15:58:44.1125212Z Getting action download info
+2021-10-28T15:58:44.3403873Z Download action repository 'actions/checkout@v2' (SHA:1e204e9a9253d643386038d443f96446fa156a97)
+2021-10-28T15:58:46.4693494Z Download action repository 'ruby/setup-ruby@v1' (SHA:b00551441a6fa3d528f3443dbff264a934b6e316)

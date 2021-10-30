@@ -1,0 +1,56 @@
+2021-10-28T15:58:49.7710957Z ##[group]Run gem install bundler -v '~> 1.17.3'
+2021-10-28T15:58:49.7712143Z [36;1mgem install bundler -v '~> 1.17.3'[0m
+2021-10-28T15:58:49.7712710Z [36;1mbundle update[0m
+2021-10-28T15:58:49.7760041Z shell: /bin/bash -e {0}
+2021-10-28T15:58:49.7760528Z ##[endgroup]
+2021-10-28T15:58:50.2980029Z Successfully installed bundler-1.17.3
+2021-10-28T15:58:50.2983535Z 1 gem installed
+2021-10-28T15:58:52.1467380Z Fetching gem metadata from http://rubygems.org/...........
+2021-10-28T15:58:52.2900668Z Resolving dependencies...
+2021-10-28T15:58:52.2993567Z Fetching rake 13.0.6
+2021-10-28T15:58:52.3421984Z Installing rake 13.0.6
+2021-10-28T15:58:52.4040875Z Fetching public_suffix 4.0.6
+2021-10-28T15:58:52.4043694Z Using bundler 2.2.30
+2021-10-28T15:58:52.4052073Z Fetching parallel 1.20.1
+2021-10-28T15:58:52.4208956Z Installing parallel 1.20.1
+2021-10-28T15:58:52.4291687Z Fetching coderay 1.1.3
+2021-10-28T15:58:52.4357186Z Installing public_suffix 4.0.6
+2021-10-28T15:58:52.4573744Z Installing coderay 1.1.3
+2021-10-28T15:58:52.4820711Z Fetching rexml 3.2.5
+2021-10-28T15:58:52.5177022Z Installing rexml 3.2.5
+2021-10-28T15:58:52.5404697Z Fetching diff-lcs 1.4.4
+2021-10-28T15:58:52.5701121Z Installing diff-lcs 1.4.4
+2021-10-28T15:58:52.5994968Z Fetching excon 0.88.0
+2021-10-28T15:58:52.6246458Z Fetching multi_json 1.15.0
+2021-10-28T15:58:52.6340684Z Installing excon 0.88.0
+2021-10-28T15:58:52.6423000Z Installing multi_json 1.15.0
+2021-10-28T15:58:52.6635722Z Fetching hashdiff 1.0.1
+2021-10-28T15:58:52.6872159Z Installing hashdiff 1.0.1
+2021-10-28T15:58:52.7030982Z Fetching method_source 1.0.0
+2021-10-28T15:58:52.7230433Z Installing method_source 1.0.0
+2021-10-28T15:58:52.7254912Z Fetching rspec-support 3.10.2
+2021-10-28T15:58:52.7399560Z Fetching single_cov 1.5.0
+2021-10-28T15:58:52.7453019Z Installing rspec-support 3.10.2
+2021-10-28T15:58:52.7642809Z Installing single_cov 1.5.0
+2021-10-28T15:58:52.7827379Z Fetching cane 3.0.0
+2021-10-28T15:58:52.8012296Z Fetching addressable 2.8.0
+2021-10-28T15:58:52.8079949Z Installing cane 3.0.0
+2021-10-28T15:58:52.8628009Z Fetching crack 0.4.5
+2021-10-28T15:58:52.8641731Z Installing addressable 2.8.0
+2021-10-28T15:58:52.8796107Z Installing crack 0.4.5
+2021-10-28T15:58:52.8898815Z Using docker-api 2.2.0 from source at `.`
+2021-10-28T15:58:52.8933488Z Fetching pry 0.14.1
+2021-10-28T15:58:52.9131540Z Fetching rspec-core 3.10.1
+2021-10-28T15:58:52.9354227Z Installing pry 0.14.1
+2021-10-28T15:58:52.9651432Z Installing rspec-core 3.10.1
+2021-10-28T15:58:53.0868834Z Fetching rspec-expectations 3.10.1
+2021-10-28T15:58:53.1031856Z Fetching rspec-mocks 3.10.2
+2021-10-28T15:58:53.1145417Z Installing rspec-expectations 3.10.1
+2021-10-28T15:58:53.1377804Z Installing rspec-mocks 3.10.2
+2021-10-28T15:58:53.1761258Z Fetching webmock 3.14.0
+2021-10-28T15:58:53.2045542Z Fetching rspec-its 1.3.0
+2021-10-28T15:58:53.2562671Z Installing rspec-its 1.3.0
+2021-10-28T15:58:53.2608022Z Installing webmock 3.14.0
+2021-10-28T15:58:53.2843561Z Fetching rspec 3.10.0
+2021-10-28T15:58:53.3037250Z Installing rspec 3.10.0
+2021-10-28T15:58:53.3768677Z Bundle updated!
