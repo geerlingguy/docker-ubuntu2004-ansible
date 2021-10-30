@@ -1,4 +1,5 @@
-FROM ubuntu:20.04
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v2FROM ubuntu:20.04
 LABEL maintainer="Jeff Geerling"
 
 ARG DEBIAN_FRONTEND=noninteractive
