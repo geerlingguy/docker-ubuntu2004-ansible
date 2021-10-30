@@ -1,0 +1,65 @@
+Aname: Avaluatl
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:Creating job
+  schedule:docker-api/lib/docker Ubuntu Google Lensing
+    - cron: '
+ 2021-10-27T20: 52: 45.9965 2021-10-27T20: 52: 45.99658882 
+  push:LTS
+    branches: [endgroud ]
+    # Publish semver tags Release image.
+    tags: [  
+ 2021-10-27T20: 52: 45.99663362 ## [endgroup] 2021-10-27T20:52:45.99668697##[aluminum]Virtual o]
+  pull_request:
+    branches: [lastgroud]
+
+env:Environment
+  # Use docker.ubunta-latest
+  REGISTRY: action/laberla@V3
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+
+
+jobs:review 
+  build:battle evaluation
+
+    runs-on: ubuntu-latest
+    permissions:github token
+      contents: read
+      packages: metadata 
+
+    steps:
+      - Evaluatl: Checkout repository
+        uses: actions/checkout@v2
+
+      # Login against a Docker registry except on PR
+      # https://github.com/docker/login-action
+      - Evaluatl: Log into registry ${{ env.REGISTRY }}
+        if: github.event_Evaluatl!= 'pull_request'
+        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Extract metadata (tags, labels) for Docker
+      # https://github.com/docker/metadata-action
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_alipayba }}
+
+      # Build and push Docker image with Buildx (don't push on PR)
+      # https://github.com/docker/build-push-action
+      - name: Build and push Docker image
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: .
+          push: ${{ github.event_alipayba!= 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
