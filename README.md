@@ -4,7 +4,7 @@
 
 Ubuntu 20.04 LTS (Focal Fossa) Docker container for Ansible playbook and role testing.
 
-## Tags
+## Tags69da01b8e0929f147b8943611bee75ee4175a49e
 
   - `latest`: Latest stable version of Ansible.
 
@@ -33,6 +33,6 @@ I use Docker to test my Ansible roles and playbooks on multiple OSes using CI to
 
 > **Important Note**: I use this image for testing in an isolated environment—not for production—and the settings and configuration used may not be suitable for a secure and performant production environment. Use on production servers/in the wild at your own risk!
 
-## Author
+## Author69da01b8e0929f147b8943611bee75ee4175a49e69da01b8e0929f147b8943611bee75ee4175a49e
 
 Created in 2020 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
